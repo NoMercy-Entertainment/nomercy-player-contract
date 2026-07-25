@@ -1,5 +1,11 @@
 {
   "version": "2.0.1",
+  "provenance": {
+    "version": "2.0.1",
+    "commit": "523bf4b",
+    "commitsAheadOfTag": 1,
+    "dirty": false
+  },
   "events": [
     {
       "name": "activity",

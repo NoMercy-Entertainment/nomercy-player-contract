@@ -1,3 +1,4 @@
+import { execFileSync } from 'node:child_process';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -7,8 +8,21 @@ import { extractErrors } from './extract-errors';
 import { extractMethods, MethodEntry } from './extract-methods';
 import { PACKAGES } from './paths';
 
+export interface Provenance {
+  /** Version in player-core's package.json at generation time. */
+  version: string;
+  /** Commit the source was read from. */
+  commit: string;
+  /** Commits ahead of the tag matching `version`. Non-zero means this contract
+   *  describes UNRELEASED source — the version field alone would misrepresent it. */
+  commitsAheadOfTag: number;
+  /** Uncommitted changes present in the source tree. */
+  dirty: boolean;
+}
+
 export interface Contract {
   version: string;
+  provenance: Provenance;
   events: EventEntry[];
   methods: MethodEntry[];
   errors: string[];
@@ -35,12 +49,36 @@ export function contractVersion(): string {
   return parsed.version;
 }
 
+function git(args: string): string {
+  return execFileSync('git', args.split(' '), { cwd: PACKAGES.core, encoding: 'utf8' }).trim();
+}
+
+// The version alone is a lie whenever source sits ahead of its tag: the generator
+// reads the working tree, not the published tarball. Provenance makes that visible
+// instead of letting a stale-or-early contract look authoritative.
+export function provenance(): Provenance {
+  const version: string = contractVersion();
+  const commit: string = git('rev-parse --short HEAD');
+  const dirty: boolean = git('status --porcelain') !== '';
+
+  let commitsAheadOfTag: number = 0;
+
+  try {
+    commitsAheadOfTag = Number(git(`rev-list --count v${version}..HEAD`));
+  }
+  catch {
+    commitsAheadOfTag = -1; // no tag for this version yet
+  }
+
+  return { version, commit, commitsAheadOfTag, dirty };
+}
+
 export function buildContract(): Contract {
   const events = extractEvents().sort(byKey(e => `${e.map}:${e.name}`));
   const methods = extractMethods().sort(byKey(m => `${m.player}:${m.name}`));
   const errors = extractErrors();
 
-  return { version: contractVersion(), events, methods, errors };
+  return { version: contractVersion(), provenance: provenance(), events, methods, errors };
 }
 
 const CONTRACT_PATH: string = `${dirname(fileURLToPath(import.meta.url))}/../contract/contract.json`;

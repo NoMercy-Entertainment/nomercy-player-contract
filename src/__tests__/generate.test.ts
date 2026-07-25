@@ -21,6 +21,13 @@ describe('buildContract', () => {
     expect(contract.version).toMatch(/^\d+\.\d+\.\d+(-[0-9A-Za-z.-]+)?$/);
   });
 
+  it('records provenance, so a version stamp cannot misrepresent unreleased source', () => {
+    expect(contract.provenance.version).toBe(contract.version);
+    expect(contract.provenance.commit).toMatch(/^[0-9a-f]{7,40}$/);
+    expect(typeof contract.provenance.commitsAheadOfTag).toBe('number');
+    expect(typeof contract.provenance.dirty).toBe('boolean');
+  });
+
   it('includes the three surfaces', () => {
     expect(contract.events.length).toBeGreaterThan(0);
     expect(contract.methods.length).toBeGreaterThan(0);
