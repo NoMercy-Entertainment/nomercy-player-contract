@@ -34,7 +34,7 @@ export function checkReleased(contract: Contract): ReleaseCheck {
       ok: false,
       reason:
         `the source is ${commitsAheadOfTag} commit(s) ahead of v${version}, so this contract describes `
-        + 'unreleased API. Publish the trio, or pass --allow-unreleased to say you meant it',
+        + 'unreleased API. Publish the trio before a native port pins to it',
     };
   }
 
@@ -54,6 +54,16 @@ export function checkDrift(): { ok: boolean; diff: string } {
   return { ok: false, diff: `line ${at + 1}: committed=${committedLines[at] ?? '<eof>'} fresh=${freshLines[at] ?? '<eof>'}` };
 }
 
+// Two checks with two different jobs, and they are not both gates on every push.
+//
+// Drift — does the committed contract still match what the generator produces —
+// is the daily invariant, and it fails the build.
+//
+// Released-ness is a publish gate. It is true and useful, and it is also true
+// on every push where anything at all is unpublished, which is most of them.
+// Failing every push on it taught nobody anything and would have been silenced
+// within a week. It runs everywhere and says so loudly; it only fails the build
+// under --require-released, which is what a release run passes.
 if (process.argv[1]?.endsWith('check-drift.ts')) {
   const result = checkDrift();
   if (!result.ok) {
@@ -63,13 +73,12 @@ if (process.argv[1]?.endsWith('check-drift.ts')) {
 
   const release = checkReleased(buildContract());
   if (!release.ok) {
-    if (process.argv.includes('--allow-unreleased')) {
-      process.stdout.write(`Contract describes unreleased API, allowed explicitly: ${release.reason}\n`);
-    }
-    else {
-      process.stderr.write(`Player contract is not a released surface: ${release.reason}\n`);
+    const message = `Player contract is not a released surface: ${release.reason}\n`;
+    if (process.argv.includes('--require-released')) {
+      process.stderr.write(message);
       process.exit(1);
     }
+    process.stdout.write(`WARNING: ${message}`);
   }
 
   process.stdout.write('Player contract up to date.\n');

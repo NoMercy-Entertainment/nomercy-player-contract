@@ -6,7 +6,8 @@
   "scripts": {
     "generate": "tsx src/generate.ts",
     "check": "tsx src/check-drift.ts",
-    "test": "vitest run"
+    "test": "vitest run",
+    "check:release": "tsx src/check-drift.ts --require-released"
   },
   "dependencies": {
     "ts-morph": "^23.0.0"

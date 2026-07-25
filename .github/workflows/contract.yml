@@ -2,16 +2,64 @@ name: player-contract
 
 on: [push, pull_request]
 
+concurrency:
+  group: contract-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   contract:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+        with:
+          path: tools/player-contract
+
+      # The generator reads the trio's TypeScript. Without the packages it has
+      # nothing to extract from, which is what turned this workflow red: every
+      # test that touches a real package root failed on a path that only exists
+      # inside the monorepo. All three are public, and they are the subject of
+      # the run rather than a dependency on anyone's private layout.
+      - uses: actions/checkout@v6
+        with:
+          repository: NoMercy-Entertainment/nomercy-player-core
+          path: packages/nomercy-player-core
+          fetch-depth: 0
+      - uses: actions/checkout@v6
+        with:
+          repository: NoMercy-Entertainment/nomercy-video-player
+          path: packages/nomercy-video-player
+          fetch-depth: 0
+      - uses: actions/checkout@v6
+        with:
+          repository: NoMercy-Entertainment/nomercy-music-player
+          path: packages/nomercy-music-player
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v6
         with:
           node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm test
-      - run: npm run check
+
+      - name: Install
+        working-directory: tools/player-contract
+        run: npm ci
+
+      - name: Test
+        working-directory: tools/player-contract
+        run: npm test
+
+      # Drift is the daily gate: the committed contract must still match what the
+      # generator produces. It also prints whether the surface is released, which
+      # needs the tags it compares against — hence fetch-depth: 0 above.
+      - name: Drift
+        working-directory: tools/player-contract
+        run: npm run check
+
+      # Released-ness is a publish gate, not a push gate. It is true on every
+      # push where anything at all is unpublished, so gating every push on it
+      # would have been silenced within a week. Here it bites: a tag means
+      # something is being released, and the contract has to describe it.
+      - name: Released surface
+        if: startsWith(github.ref, 'refs/tags/')
+        working-directory: tools/player-contract
+        run: npm run check:release
