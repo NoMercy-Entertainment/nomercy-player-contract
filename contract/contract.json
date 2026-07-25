@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "events": [
     {
       "name": "activity",
@@ -803,6 +803,11 @@
     },
     {
       "name": "canplay",
+      "payload": "void",
+      "map": "video"
+    },
+    {
+      "name": "cast",
       "payload": "void",
       "map": "video"
     },

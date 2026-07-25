@@ -1,12 +1,24 @@
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+
 import { describe, expect, it } from 'vitest';
 
 import { buildContract } from '../generate';
+import { PACKAGES } from '../paths';
 
 describe('buildContract', () => {
   const contract = buildContract();
 
-  it('stamps the web-contract version', () => {
-    expect(contract.version).toBe('2.0.0');
+  it('stamps the version the trio actually publishes', () => {
+    const published: string = JSON.parse(
+      readFileSync(resolve(PACKAGES.core, 'package.json'), 'utf8'),
+    ).version;
+
+    expect(contract.version).toBe(published);
+  });
+
+  it('stamps a real semver, not a placeholder', () => {
+    expect(contract.version).toMatch(/^\d+\.\d+\.\d+(-[0-9A-Za-z.-]+)?$/);
   });
 
   it('includes the three surfaces', () => {
