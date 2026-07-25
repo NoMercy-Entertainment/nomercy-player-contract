@@ -34,6 +34,16 @@ describe('buildContract', () => {
     expect(contract.errors.length).toBeGreaterThan(0);
   });
 
+  it('collects error codes from all three packages, not only core', () => {
+    // The extractor read only player-core until 2026-07-25, so nine codes minted
+    // in the video and music libraries were invisible to every conformance check
+    // measured against this file. One representative per package, so the test
+    // fails if the extractor is ever narrowed again.
+    expect(contract.errors).toContain('core:lifecycle/use-plugin-after-dispose'); // core
+    expect(contract.errors).toContain('plugin:octopus/load-failed'); // video, the ASS renderer
+    expect(contract.errors).toContain('core:player/crossfade-unsupported'); // music
+  });
+
   it('is deterministic — two builds are byte-identical', () => {
     expect(JSON.stringify(buildContract())).toBe(JSON.stringify(contract));
   });

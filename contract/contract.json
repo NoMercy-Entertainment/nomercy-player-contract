@@ -2340,6 +2340,7 @@
     "core:auth/forbidden",
     "core:auth/refresh-failed",
     "core:auth/unauthenticated",
+    "core:drm/license-url-missing",
     "core:lifecycle/already-setup",
     "core:lifecycle/cleanup-failed",
     "core:lifecycle/use-plugin-after-dispose",
@@ -2363,6 +2364,7 @@
     "core:network/service-unavailable",
     "core:network/timeout",
     "core:player/backend-missing",
+    "core:player/crossfade-unsupported",
     "core:player/disposed",
     "core:player/element-missing",
     "core:player/element-not-div",
@@ -2391,6 +2393,13 @@
     "core:test/player-missing-addplugin",
     "core:test/vitest-globals-missing",
     "plugin:canvas/not-mounted",
+    "plugin:lyrics/fetch-failed",
+    "plugin:lyrics/no-parser",
+    "plugin:octopus/fonts-manifest-failed",
+    "plugin:octopus/load-failed",
+    "plugin:octopus/render-error",
+    "plugin:scrobble/now-playing-failed",
+    "plugin:scrobble/scrobble-failed",
     "visualization:render/failed"
   ]
 }
