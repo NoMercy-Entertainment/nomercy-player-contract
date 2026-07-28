@@ -38,7 +38,11 @@ export function checkReleased(contract: Contract): ReleaseCheck {
     };
   }
 
-  return { ok: true, reason: '' };
+  // Said out loud, even when it passes. An empty reason on the happy path is
+  // indistinguishable from a check that returned before it looked at anything,
+  // and this is the one that decides whether a native port may pin to a
+  // contract at all.
+  return { ok: true, reason: `v${version}, clean and at its tag` };
 }
 
 export function checkDrift(): { ok: boolean; diff: string } {
