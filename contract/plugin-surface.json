@@ -1,0 +1,6198 @@
+[
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "audioGraphPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": false,
+    "name": "resolveAudioContextCtor",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "analyserSource",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "context",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "createContext",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "disconnectSafe",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "insertEffect",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "mountSource",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "outputNode",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "post",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "pre",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "rebuildChain",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "removeEffect",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolveBackendAnalysisNode",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolveBackendOutputNode",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolveMediaElement",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "route",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "tearDownGraph",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "unroute",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "AudioGraphPlugin"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "fftSize",
+    "kind": "option",
+    "owner": "AudioGraphOptions"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "latencyHint",
+    "kind": "option",
+    "owner": "AudioGraphOptions"
+  },
+  {
+    "plugin": "core/audio-graph",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "smoothing",
+    "kind": "option",
+    "owner": "AudioGraphOptions"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "canvasPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addRenderer",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "applyInitialSize",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "canvas",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "context",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "createCanvas",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "installResizeObserver",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "removeRenderer",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resize",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolveMountParent",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "size",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "startRenderLoop",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "CanvasPlugin"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "compositeMode",
+    "kind": "option",
+    "owner": "CanvasOptions"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "fps",
+    "kind": "option",
+    "owner": "CanvasOptions"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "height",
+    "kind": "option",
+    "owner": "CanvasOptions"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "mount",
+    "kind": "option",
+    "owner": "CanvasOptions"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "pixelRatio",
+    "kind": "option",
+    "owner": "CanvasOptions"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "pointerEvents",
+    "kind": "option",
+    "owner": "CanvasOptions"
+  },
+  {
+    "plugin": "core/canvas",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "width",
+    "kind": "option",
+    "owner": "CanvasOptions"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "i18n/en.ts",
+    "exported": false,
+    "name": "translations",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "castSenderPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "_readCurrentItem",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "attachRemoteListeners",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "buildMetadata",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "castContext",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "castFramework",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "chromeCastMedia",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "connect",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "defaultContentType",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "detachRemoteListeners",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "disconnect",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "emitPlayer",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "forwardCurrent",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "forwardMute",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "forwardPlayPause",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "forwardSeek",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "forwardStop",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "forwardVolume",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "handleRemoteDisconnect",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "isConnected",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "chromecastAppId",
+    "kind": "option",
+    "owner": "CastSenderOptions"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "customReceiverNamespace",
+    "kind": "option",
+    "owner": "CastSenderOptions"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "defaultContentType",
+    "kind": "option",
+    "owner": "CastSenderOptions"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "enableAirPlay",
+    "kind": "option",
+    "owner": "CastSenderOptions"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "live",
+    "kind": "option",
+    "owner": "CastSenderOptions"
+  },
+  {
+    "plugin": "core/cast-sender",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resumeLocalOnDisconnect",
+    "kind": "option",
+    "owner": "CastSenderOptions"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "embedPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "allowedOrigins",
+    "kind": "method",
+    "owner": "EmbedPlugin"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "EmbedPlugin"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "formatEvent",
+    "kind": "method",
+    "owner": "EmbedPlugin"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "handleCommand",
+    "kind": "method",
+    "owner": "EmbedPlugin"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "inIframe",
+    "kind": "method",
+    "owner": "EmbedPlugin"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "isOriginAllowed",
+    "kind": "method",
+    "owner": "EmbedPlugin"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "options",
+    "kind": "method",
+    "owner": "EmbedPlugin"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "sendToHost",
+    "kind": "method",
+    "owner": "EmbedPlugin"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "serializeError",
+    "kind": "method",
+    "owner": "EmbedPlugin"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "EmbedPlugin"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "allowedOrigins",
+    "kind": "option",
+    "owner": "EmbedOptions"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "applyIframeTweaks",
+    "kind": "option",
+    "owner": "EmbedOptions"
+  },
+  {
+    "plugin": "core/embed",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "forwardEvents",
+    "kind": "option",
+    "owner": "EmbedOptions"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": false,
+    "name": "PRE_GAIN_SNAP_THRESHOLD",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "equalizerPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addCustomPreset",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "applyAllToNodes",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "autoSave",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "band",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "bandSliderMax",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "bandSliderMin",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "bandSliderStep",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "bandSliderValue",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "bands",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "clonePreset",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "emitChange",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "findBand",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "findFilter",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "loadPersisted",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "preGain",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "preGainBand",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "preset",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "presets",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "q",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "rampParam",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "removePreset",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "reset",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolvePreset",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "restore",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "save",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "sliderRangeFor",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "sliderValues",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "smoothingTau",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "snapPreGain",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "toFloat",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "writeBand",
+    "kind": "method",
+    "owner": "EqualizerPlugin"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "autoLoad",
+    "kind": "option",
+    "owner": "EqualizerOptions"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "autoSave",
+    "kind": "option",
+    "owner": "EqualizerOptions"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "bands",
+    "kind": "option",
+    "owner": "EqualizerOptions"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "persistKey",
+    "kind": "option",
+    "owner": "EqualizerOptions"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "preset",
+    "kind": "option",
+    "owner": "EqualizerOptions"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "presets",
+    "kind": "option",
+    "owner": "EqualizerOptions"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "sliderValues",
+    "kind": "option",
+    "owner": "EqualizerOptions"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "smoothingTimeConstantSeconds",
+    "kind": "option",
+    "owner": "EqualizerOptions"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "presets.ts",
+    "exported": true,
+    "name": "BUILTIN_PRESETS",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "presets.ts",
+    "exported": true,
+    "name": "DEFAULT_BANDS",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "presets.ts",
+    "exported": true,
+    "name": "DEFAULT_SLIDER_VALUES",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/equalizer",
+    "package": "core",
+    "file": "presets.ts",
+    "exported": false,
+    "name": "preset",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "keyHandlerPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addDefaults",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addMediaKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addNavigationKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addPlaybackKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addVolumeKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "applyOptions",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "bind",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "bindings",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "canonicalKey",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "defaultBindings",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "isTypingTarget",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "normalizeCombo",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "parseCombo",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "replace",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "scope",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "unbind",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "bindings",
+    "kind": "option",
+    "owner": "KeyHandlerOptions"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "cooldownMs",
+    "kind": "option",
+    "owner": "KeyHandlerOptions"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "disableMediaControls",
+    "kind": "option",
+    "owner": "KeyHandlerOptions"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "extend",
+    "kind": "option",
+    "owner": "KeyHandlerOptions"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "scope",
+    "kind": "option",
+    "owner": "KeyHandlerOptions"
+  },
+  {
+    "plugin": "core/key-handler",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "when",
+    "kind": "option",
+    "owner": "KeyHandlerOptions"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": false,
+    "name": "MIME_BY_EXT",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "mediaSessionPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": false,
+    "name": "mimeFromUrl",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "_pickImageUrl",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "_pushMetadata",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "_readItemFn",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addNavigationActions",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addPlaybackActions",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addSeekActions",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "clearMetadata",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "getMetadata",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "metadata",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "registerAction",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "setPlaybackState",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "updatePositionState",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/media-session",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "messagePlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "cancelHideTimeout",
+    "kind": "method",
+    "owner": "MessagePlugin"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "clear",
+    "kind": "method",
+    "owner": "MessagePlugin"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "displayMessage",
+    "kind": "method",
+    "owner": "MessagePlugin"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "displayPersistent",
+    "kind": "method",
+    "owner": "MessagePlugin"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "MessagePlugin"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "hide",
+    "kind": "method",
+    "owner": "MessagePlugin"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "queue",
+    "kind": "method",
+    "owner": "MessagePlugin"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "removePersistent",
+    "kind": "method",
+    "owner": "MessagePlugin"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "show",
+    "kind": "method",
+    "owner": "MessagePlugin"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "MessagePlugin"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "durationMs",
+    "kind": "option",
+    "owner": "MessageOptions"
+  },
+  {
+    "plugin": "core/message",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "mountSelector",
+    "kind": "option",
+    "owner": "MessageOptions"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "mixerPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "autoSave",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "clampPan",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dbToLinear",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "gain",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "getGainNode",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "getPannerNode",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "loadPersisted",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "muted",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "pan",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "rampParam",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "save",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "MixerPlugin"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "gain",
+    "kind": "option",
+    "owner": "MixerOptions"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "maxGainDb",
+    "kind": "option",
+    "owner": "MixerOptions"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "pan",
+    "kind": "option",
+    "owner": "MixerOptions"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "persistKey",
+    "kind": "option",
+    "owner": "MixerOptions"
+  },
+  {
+    "plugin": "core/mixer",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "smoothingTimeConstantSeconds",
+    "kind": "option",
+    "owner": "MixerOptions"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "spectrumPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "allocateBuffers",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "analyser",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "bandEnergy",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "currentFrame",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "emitSyntheticFrame",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "ensureFreqBuffer",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "fftSize",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "pushFrame",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "registerBeatProvider",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "smoothingTimeConstant",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "syntheticMode",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "tick",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "wireStereo",
+    "kind": "method",
+    "owner": "SpectrumPlugin"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "fftSize",
+    "kind": "option",
+    "owner": "SpectrumOptions"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "frameRate",
+    "kind": "option",
+    "owner": "SpectrumOptions"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "smoothingTimeConstant",
+    "kind": "option",
+    "owner": "SpectrumOptions"
+  },
+  {
+    "plugin": "core/spectrum",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "stereo",
+    "kind": "option",
+    "owner": "SpectrumOptions"
+  },
+  {
+    "plugin": "core/tab-leader",
+    "package": "core",
+    "file": "index.ts",
+    "exported": false,
+    "name": "DEFAULT_LOCK_KEY",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/tab-leader",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "tabLeaderPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/tab-leader",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "_supported",
+    "kind": "method",
+    "owner": "TabLeaderPlugin"
+  },
+  {
+    "plugin": "core/tab-leader",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "TabLeaderPlugin"
+  },
+  {
+    "plugin": "core/tab-leader",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "getLockKey",
+    "kind": "method",
+    "owner": "TabLeaderPlugin"
+  },
+  {
+    "plugin": "core/tab-leader",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "isLeader",
+    "kind": "method",
+    "owner": "TabLeaderPlugin"
+  },
+  {
+    "plugin": "core/tab-leader",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "releaseLock",
+    "kind": "method",
+    "owner": "TabLeaderPlugin"
+  },
+  {
+    "plugin": "core/tab-leader",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "requestLock",
+    "kind": "method",
+    "owner": "TabLeaderPlugin"
+  },
+  {
+    "plugin": "core/tab-leader",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "TabLeaderPlugin"
+  },
+  {
+    "plugin": "core/tab-leader",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "getLockKey",
+    "kind": "option",
+    "owner": "TabLeaderOptions"
+  },
+  {
+    "plugin": "core/tab-leader",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "handoffOnVisible",
+    "kind": "option",
+    "owner": "TabLeaderOptions"
+  },
+  {
+    "plugin": "core/tab-leader",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "onLost",
+    "kind": "option",
+    "owner": "TabLeaderOptions"
+  },
+  {
+    "plugin": "core/visualization",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "waveformVisualization",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/visualization",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "_renderTick",
+    "kind": "method",
+    "owner": "VisualizationPlugin"
+  },
+  {
+    "plugin": "core/visualization",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "currentFrame",
+    "kind": "method",
+    "owner": "VisualizationPlugin"
+  },
+  {
+    "plugin": "core/visualization",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "VisualizationPlugin"
+  },
+  {
+    "plugin": "core/visualization",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "onBeat",
+    "kind": "method",
+    "owner": "VisualizationPlugin"
+  },
+  {
+    "plugin": "core/visualization",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "onResize",
+    "kind": "method",
+    "owner": "VisualizationPlugin"
+  },
+  {
+    "plugin": "core/visualization",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "render",
+    "kind": "method",
+    "owner": "VisualizationPlugin"
+  },
+  {
+    "plugin": "core/visualization",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "render",
+    "kind": "method",
+    "owner": "WaveformVisualization"
+  },
+  {
+    "plugin": "core/visualization",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "setup",
+    "kind": "method",
+    "owner": "VisualizationPlugin"
+  },
+  {
+    "plugin": "core/visualization",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "VisualizationPlugin"
+  },
+  {
+    "plugin": "core/visualization",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "clearBeforeRender",
+    "kind": "option",
+    "owner": "VisualizationOptions"
+  },
+  {
+    "plugin": "core/visualization",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "tick",
+    "kind": "option",
+    "owner": "VisualizationOptions"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "autoAdvancePlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addCrossfadeHandler",
+    "kind": "method",
+    "owner": "AutoAdvancePlugin"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addEndedHandler",
+    "kind": "method",
+    "owner": "AutoAdvancePlugin"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addPreloadHandler",
+    "kind": "method",
+    "owner": "AutoAdvancePlugin"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "advance",
+    "kind": "method",
+    "owner": "AutoAdvancePlugin"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "onEnded",
+    "kind": "method",
+    "owner": "AutoAdvancePlugin"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "onItemEndingSoon",
+    "kind": "method",
+    "owner": "AutoAdvancePlugin"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "preloadNext",
+    "kind": "method",
+    "owner": "AutoAdvancePlugin"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolveGeneratedNext",
+    "kind": "method",
+    "owner": "AutoAdvancePlugin"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolveNext",
+    "kind": "method",
+    "owner": "AutoAdvancePlugin"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "AutoAdvancePlugin"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "crossfade",
+    "kind": "option",
+    "owner": "AutoAdvanceOptions"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "crossfadeDuration",
+    "kind": "option",
+    "owner": "AutoAdvanceOptions"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "enabled",
+    "kind": "option",
+    "owner": "AutoAdvanceOptions"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "generator",
+    "kind": "option",
+    "owner": "AutoAdvanceOptions"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "preloadNextOnEnding",
+    "kind": "option",
+    "owner": "AutoAdvanceOptions"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "linear.ts",
+    "exported": true,
+    "name": "next",
+    "kind": "method",
+    "owner": "LinearPlaylistGenerator"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "linear.ts",
+    "exported": true,
+    "name": "previous",
+    "kind": "method",
+    "owner": "LinearPlaylistGenerator"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "smart-shuffle.ts",
+    "exported": true,
+    "name": "next",
+    "kind": "method",
+    "owner": "SmartShuffleGenerator"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "smart-shuffle.ts",
+    "exported": true,
+    "name": "previous",
+    "kind": "method",
+    "owner": "SmartShuffleGenerator"
+  },
+  {
+    "plugin": "music/auto-advance",
+    "package": "music",
+    "file": "smart-shuffle.ts",
+    "exported": true,
+    "name": "toSet",
+    "kind": "method",
+    "owner": "SmartShuffleGenerator"
+  },
+  {
+    "plugin": "music/cast-sender",
+    "package": "music",
+    "file": "i18n/en.ts",
+    "exported": false,
+    "name": "translations",
+    "kind": "const"
+  },
+  {
+    "plugin": "music/cast-sender",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "castSenderPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "music/cast-sender",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "buildMetadata",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "music/cast-sender",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "defaultContentType",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "music/key-handler",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "keyHandlerPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "music/key-handler",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addMediaKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "lyricsPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "all",
+    "kind": "method",
+    "owner": "LyricsPlugin"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "attach",
+    "kind": "method",
+    "owner": "LyricsPlugin"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "clear",
+    "kind": "method",
+    "owner": "LyricsPlugin"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "current",
+    "kind": "method",
+    "owner": "LyricsPlugin"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "LyricsPlugin"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "fetchAndAttach",
+    "kind": "method",
+    "owner": "LyricsPlugin"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "fetchLyrics",
+    "kind": "method",
+    "owner": "LyricsPlugin"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "isMusicItem",
+    "kind": "method",
+    "owner": "LyricsPlugin"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolveLyricsUrl",
+    "kind": "method",
+    "owner": "LyricsPlugin"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolveParser",
+    "kind": "method",
+    "owner": "LyricsPlugin"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "LyricsPlugin"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "autoFetch",
+    "kind": "option",
+    "owner": "LyricsOptions"
+  },
+  {
+    "plugin": "music/lyrics",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "getLyricsUrl",
+    "kind": "option",
+    "owner": "LyricsOptions"
+  },
+  {
+    "plugin": "music/media-session",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "mediaSessionPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "music/media-session",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "getMetadata",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "scrobblePlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "ScrobblePlugin"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "isMusicItem",
+    "kind": "method",
+    "owner": "ScrobblePlugin"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "isScrobbled",
+    "kind": "method",
+    "owner": "ScrobblePlugin"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "listened",
+    "kind": "method",
+    "owner": "ScrobblePlugin"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "maybeScrobble",
+    "kind": "method",
+    "owner": "ScrobblePlugin"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "reportNowPlaying",
+    "kind": "method",
+    "owner": "ScrobblePlugin"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resetTracking",
+    "kind": "method",
+    "owner": "ScrobblePlugin"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "scrobbler",
+    "kind": "method",
+    "owner": "ScrobblePlugin"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "trackListenedTime",
+    "kind": "method",
+    "owner": "ScrobblePlugin"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "ScrobblePlugin"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "minDurationSeconds",
+    "kind": "option",
+    "owner": "ScrobbleOptions"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "scrobbler",
+    "kind": "option",
+    "owner": "ScrobbleOptions"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "thresholdRatio",
+    "kind": "option",
+    "owner": "ScrobbleOptions"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "index.ts",
+    "exported": true,
+    "name": "thresholdSeconds",
+    "kind": "option",
+    "owner": "ScrobbleOptions"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "noop.ts",
+    "exported": true,
+    "name": "nowPlaying",
+    "kind": "method",
+    "owner": "NoopScrobbler"
+  },
+  {
+    "plugin": "music/scrobble",
+    "package": "music",
+    "file": "noop.ts",
+    "exported": true,
+    "name": "scrobble",
+    "kind": "method",
+    "owner": "NoopScrobbler"
+  },
+  {
+    "plugin": "video/cast-sender",
+    "package": "video",
+    "file": "i18n/en.ts",
+    "exported": false,
+    "name": "translations",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/cast-sender",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "castSenderPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/cast-sender",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "buildMetadata",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "video/cast-sender",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "defaultContentType",
+    "kind": "method",
+    "owner": "CastSenderPlugin"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/buttons.ts",
+    "exported": true,
+    "name": "EDGE_STYLE",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/buttons.ts",
+    "exported": true,
+    "name": "colors",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/buttons.ts",
+    "exported": true,
+    "name": "defaultSubtitleStyles",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/buttons.ts",
+    "exported": true,
+    "name": "edgeStyles",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/buttons.ts",
+    "exported": true,
+    "name": "fluentIcons",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/buttons.ts",
+    "exported": true,
+    "name": "fontFamilies",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/buttons.ts",
+    "exported": true,
+    "name": "opacities",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/buttons.ts",
+    "exported": true,
+    "name": "textSizes",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/buttons.ts",
+    "exported": true,
+    "name": "buttons",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/buttons.ts",
+    "exported": true,
+    "name": "subtitleSettingActions",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/icons.ts",
+    "exported": true,
+    "name": "svgFromIcon",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/icons.ts",
+    "exported": true,
+    "name": "svgFromIconName",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/language-names.ts",
+    "exported": false,
+    "name": "ISO3_QUIRKS",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/language-names.ts",
+    "exported": false,
+    "name": "TRANSLATED_VARIANTS",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/language-names.ts",
+    "exported": true,
+    "name": "languageDisplayName",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "data/language-names.ts",
+    "exported": true,
+    "name": "subtitleTrackLabel",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/activity.ts",
+    "exported": true,
+    "name": "bumpActivity",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/activity.ts",
+    "exported": true,
+    "name": "dismissOverlay",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/activity.ts",
+    "exported": true,
+    "name": "maybeHide",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/activity.ts",
+    "exported": true,
+    "name": "setActivity",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/buttonState.ts",
+    "exported": true,
+    "name": "applyAspectRatioIcon",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/buttonState.ts",
+    "exported": true,
+    "name": "applyAudioIcon",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/buttonState.ts",
+    "exported": true,
+    "name": "applyFullscreen",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/buttonState.ts",
+    "exported": true,
+    "name": "applyMuted",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/buttonState.ts",
+    "exported": true,
+    "name": "applyMutedIcon",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/buttonState.ts",
+    "exported": true,
+    "name": "applyPipIcon",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/buttonState.ts",
+    "exported": true,
+    "name": "applyQualityIcon",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/buttonState.ts",
+    "exported": true,
+    "name": "applyRate",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/buttonState.ts",
+    "exported": true,
+    "name": "applySubsIcon",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/buttonState.ts",
+    "exported": true,
+    "name": "applyTheaterIcon",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/buttonState.ts",
+    "exported": true,
+    "name": "applyVolume",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/buttonState.ts",
+    "exported": false,
+    "name": "setBtnIcon",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/chapters.ts",
+    "exported": true,
+    "name": "findChapterTitle",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/chapters.ts",
+    "exported": true,
+    "name": "nextChapter",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/chapters.ts",
+    "exported": true,
+    "name": "previousChapter",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/dom.ts",
+    "exported": false,
+    "name": "DEFAULT_ON_BUTTONS",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/dom.ts",
+    "exported": true,
+    "name": "applyButtonOrder",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/dom.ts",
+    "exported": true,
+    "name": "buildBottomBar",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/dom.ts",
+    "exported": true,
+    "name": "buildBottomRow",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/dom.ts",
+    "exported": true,
+    "name": "buildCenter",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/dom.ts",
+    "exported": true,
+    "name": "buildKeyboardDecoration",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/dom.ts",
+    "exported": true,
+    "name": "buildShortcutsOverlay",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/dom.ts",
+    "exported": false,
+    "name": "buttonVisible",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/dom.ts",
+    "exported": true,
+    "name": "iconBtn",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "closeAllMenus",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "collapseAllTriggers",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "makeMenuControlState",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "menuState",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "menuTriggerBtn",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "openMainMenu",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "openSubMenu",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "repaintAspectRatioIfOpen",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "repaintAudioIfOpen",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "repaintPane",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "repaintPlaylistIfOpen",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "repaintQualityIfOpen",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "repaintSpeedIfOpen",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "repaintSubsIfOpen",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "setMenuTriggerExpanded",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "syncActiveIndexes",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menuControl.ts",
+    "exported": true,
+    "name": "wireMenuKeyboardNav",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "ASPECT_RATIO_OPTIONS",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "ASPECT_RATIO_VALUE",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "SETTING_ROWS",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "SUB_MENU_ID",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "appendAction",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "appendChoice",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "buildMainMenu",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "buildMenuFrame",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "buildPlaylistCard",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "buildPlaylistPaneShell",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "buildSubMenuHeader",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "buildSubMenuPane",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "formatSettingValue",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "readSubtitleStyle",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "renderAspectRatioPane",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "renderAudioPane",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "renderMainMenuActions",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "renderPlaylistPane",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "renderQualityPane",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "renderSeasonEpisodes",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "renderSpeedPane",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "renderSubsPane",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "renderSubtitlePropertyPane",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "renderSubtitleSettingsPane",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "resolveUiLanguage",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "shouldShowSeasonSidebar",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "toTitleCase",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "writeSubtitleStyle",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": false,
+    "name": "writeSubtitleStyleKey",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/menus.ts",
+    "exported": true,
+    "name": "imageBaseUrl",
+    "kind": "option",
+    "owner": "PlaylistRenderOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/progressBar.ts",
+    "exported": false,
+    "name": "MIN_CHAPTER_SPAN",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/progressBar.ts",
+    "exported": false,
+    "name": "applyChapterFill",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/progressBar.ts",
+    "exported": true,
+    "name": "buildChapterMarkers",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/progressBar.ts",
+    "exported": true,
+    "name": "buildSliderBar",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/progressBar.ts",
+    "exported": true,
+    "name": "updateChapterBuffer",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/progressBar.ts",
+    "exported": true,
+    "name": "updateChapterHover",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/progressBar.ts",
+    "exported": true,
+    "name": "updateChapterProgress",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "BUTTON_WIDTH",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "DEFAULT_BREAKPOINTS",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "DEFAULT_PRIORITY",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "PORTRAIT_HIDDEN",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "VOL_SLIDER_EXPANDED_WIDTH",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "applyAllVisibilityRules",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "buttonFootprint",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": false,
+    "name": "buttonVisible",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "initButtonMap",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "makeResponsiveState",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "resolveBreakpoints",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "resolvePortraitHidden",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "shouldShowButton",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "wireNoHover",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "wireOrientation",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "wireResponsive",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/responsive.ts",
+    "exported": true,
+    "name": "wireVolumeSlider",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/sprite.ts",
+    "exported": true,
+    "name": "clampPopOffset",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/sprite.ts",
+    "exported": false,
+    "name": "defaultFetchText",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/sprite.ts",
+    "exported": true,
+    "name": "getScrubTime",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/sprite.ts",
+    "exported": true,
+    "name": "loadSpriteSet",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/sprite.ts",
+    "exported": true,
+    "name": "lookupCue",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/sprite.ts",
+    "exported": true,
+    "name": "paintSpriteAt",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/sprite.ts",
+    "exported": true,
+    "name": "parseSpriteVtt",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/sprite.ts",
+    "exported": false,
+    "name": "preloadImage",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/sprite.ts",
+    "exported": true,
+    "name": "resolveSpriteUrl",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/tooltips.ts",
+    "exported": true,
+    "name": "addTooltip",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/tooltips.ts",
+    "exported": true,
+    "name": "clampTooltip",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/tooltips.ts",
+    "exported": true,
+    "name": "wireTooltips",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/topBar.ts",
+    "exported": true,
+    "name": "buildTitleBar",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "helpers/topBar.ts",
+    "exported": true,
+    "name": "updateTitleBar",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "i18n/en.ts",
+    "exported": false,
+    "name": "translations",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "i18n/token-bundle.ts",
+    "exported": true,
+    "name": "titleTokenTranslations",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "desktopUiPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "disable",
+    "kind": "method",
+    "owner": "DesktopUiPlugin"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "DesktopUiPlugin"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "enable",
+    "kind": "method",
+    "owner": "DesktopUiPlugin"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "holdChrome",
+    "kind": "method",
+    "owner": "DesktopUiPlugin"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "initState",
+    "kind": "method",
+    "owner": "DesktopUiPlugin"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "overlay",
+    "kind": "method",
+    "owner": "DesktopUiPlugin"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "releaseChrome",
+    "kind": "method",
+    "owner": "DesktopUiPlugin"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "DesktopUiPlugin"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "aspectRatio",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "audio",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "breakpoints",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "buttonOrder",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "buttonPriority",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "buttons",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "cast",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "chapterNext",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "chapterPrev",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "collapseStages",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "disableClickToPause",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "fullscreen",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "hideTitle",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "imageBaseUrl",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "inactivityMs",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "mute",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "next",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "pip",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "play",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "playlist",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "portraitHidden",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "previous",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "quality",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "seekBack",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "seekForward",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "settings",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "settingsItems",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "settingsMenuActions",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "speed",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "subtitleMenuActions",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "subtitles",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "theater",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "volume",
+    "kind": "option",
+    "owner": "DesktopUiButtonOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "volumeSlider",
+    "kind": "option",
+    "owner": "DesktopUiOptions"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/activityMethods.ts",
+    "exported": true,
+    "name": "activityMethods",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/activityMethods.ts",
+    "exported": false,
+    "name": "bumpActivity",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/activityMethods.ts",
+    "exported": false,
+    "name": "dismissOverlay",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/activityMethods.ts",
+    "exported": false,
+    "name": "maybeHide",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/chapterMethods.ts",
+    "exported": true,
+    "name": "chapterMethods",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/chapterMethods.ts",
+    "exported": false,
+    "name": "findChapterTitle",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/chapterMethods.ts",
+    "exported": false,
+    "name": "nextChapter",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/chapterMethods.ts",
+    "exported": false,
+    "name": "previousChapter",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/chapterMethods.ts",
+    "exported": false,
+    "name": "refreshChaptersAndDuration",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/chapterMethods.ts",
+    "exported": false,
+    "name": "renderChapterMarkers",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/chapterMethods.ts",
+    "exported": false,
+    "name": "resolveDuration",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/chapterMethods.ts",
+    "exported": false,
+    "name": "updateChapterBuffer",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/chapterMethods.ts",
+    "exported": false,
+    "name": "updateChapterHover",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/chapterMethods.ts",
+    "exported": false,
+    "name": "updateChapterProgress",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/domMethods.ts",
+    "exported": true,
+    "name": "domMethods",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/domMethods.ts",
+    "exported": false,
+    "name": "applyInitialState",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/domMethods.ts",
+    "exported": false,
+    "name": "buildDom",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/domMethods.ts",
+    "exported": false,
+    "name": "wireEvents",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/domMethods.ts",
+    "exported": false,
+    "name": "wireKeybindHint",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/domMethods.ts",
+    "exported": false,
+    "name": "wireSliderBar",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/domMethods.ts",
+    "exported": false,
+    "name": "wireTooltips",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/feedbackMethods.ts",
+    "exported": true,
+    "name": "feedbackMethods",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/feedbackMethods.ts",
+    "exported": false,
+    "name": "hideMessage",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/feedbackMethods.ts",
+    "exported": false,
+    "name": "showMessage",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/feedbackMethods.ts",
+    "exported": false,
+    "name": "wireFeedback",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": true,
+    "name": "iconStateMethods",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applyAspectRatioIcon",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applyAudioIcon",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applyFullscreen",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applyMenuSubsIcon",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applyMuted",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applyMutedIcon",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applyPipIcon",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applyPopupMuteIcon",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applyQualityIcon",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applyRate",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applySubsIcon",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applyTheaterIcon",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "applyVolume",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "playingQualityLabel",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/iconStateMethods.ts",
+    "exported": false,
+    "name": "resolvePlayingQualityIdx",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/menuMethods.ts",
+    "exported": true,
+    "name": "menuMethods",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/menuMethods.ts",
+    "exported": false,
+    "name": "closeAllMenus",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/menuMethods.ts",
+    "exported": false,
+    "name": "openMainMenu",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/menuMethods.ts",
+    "exported": false,
+    "name": "openSubMenu",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/menuMethods.ts",
+    "exported": false,
+    "name": "repaintAspectRatioIfOpen",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/menuMethods.ts",
+    "exported": false,
+    "name": "repaintAudioIfOpen",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/menuMethods.ts",
+    "exported": false,
+    "name": "repaintPlaylistIfOpen",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/menuMethods.ts",
+    "exported": false,
+    "name": "repaintQualityIfOpen",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/menuMethods.ts",
+    "exported": false,
+    "name": "repaintSpeedIfOpen",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/menuMethods.ts",
+    "exported": false,
+    "name": "repaintSubsIfOpen",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/menuMethods.ts",
+    "exported": false,
+    "name": "syncActiveIndexes",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/menuMethods.ts",
+    "exported": false,
+    "name": "wireMenuKeyboardNav",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/shortcutsMethods.ts",
+    "exported": true,
+    "name": "shortcutsMethods",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/shortcutsMethods.ts",
+    "exported": false,
+    "name": "hideShortcuts",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/shortcutsMethods.ts",
+    "exported": false,
+    "name": "showShortcuts",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/shortcutsMethods.ts",
+    "exported": false,
+    "name": "toggleShortcuts",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/spriteMethods.ts",
+    "exported": true,
+    "name": "spriteMethods",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/spriteMethods.ts",
+    "exported": false,
+    "name": "_resolveSpriteUrl",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/spriteMethods.ts",
+    "exported": false,
+    "name": "_revokeSpriteObjectUrl",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/spriteMethods.ts",
+    "exported": false,
+    "name": "clampPopOffset",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/spriteMethods.ts",
+    "exported": false,
+    "name": "getScrubTime",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/spriteMethods.ts",
+    "exported": false,
+    "name": "loadSpritesForItem",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/spriteMethods.ts",
+    "exported": false,
+    "name": "paintSpriteAt",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": true,
+    "name": "transportStateMethods",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": false,
+    "name": "_formatRemaining",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": false,
+    "name": "applyDuration",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": false,
+    "name": "applyStateVisibility",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": false,
+    "name": "applyTime",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": false,
+    "name": "handleCurrentChange",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": false,
+    "name": "refreshCapabilityVisibility",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": false,
+    "name": "refreshTransportEnablement",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": false,
+    "name": "safeCurrentIndex",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": false,
+    "name": "safeQueueLength",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": false,
+    "name": "setContentHidden",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": false,
+    "name": "setDisabled",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/desktop-ui",
+    "package": "video",
+    "file": "mixins/transportStateMethods.ts",
+    "exported": false,
+    "name": "setPlayingState",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "drmPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "DrmPlugin"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "fetchLicense",
+    "kind": "method",
+    "owner": "DrmPlugin"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "mediaKeys",
+    "kind": "method",
+    "owner": "DrmPlugin"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "tryHandshake",
+    "kind": "method",
+    "owner": "DrmPlugin"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "DrmPlugin"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "certificate",
+    "kind": "option",
+    "owner": "DrmOptions"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "customSignRequest",
+    "kind": "option",
+    "owner": "DrmOptions"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "hdcpRequired",
+    "kind": "option",
+    "owner": "DrmOptions"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "keySystem",
+    "kind": "option",
+    "owner": "DrmOptions"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "licenseUrl",
+    "kind": "option",
+    "owner": "DrmOptions"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "transformLicenseRequest",
+    "kind": "option",
+    "owner": "DrmOptions"
+  },
+  {
+    "plugin": "video/drm",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "transformLicenseResponse",
+    "kind": "option",
+    "owner": "DrmOptions"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "i18n/en.ts",
+    "exported": false,
+    "name": "translations",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "keyHandlerPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "hasDisplayMessage",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addAspectRatioKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addChapterKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addDefaults",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addFrameAdvanceKey",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addFullscreenKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addHelpKey",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addMediaKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addModifierSeekKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addNavigationKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addNextPrevKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addPlaybackKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addQuickSkipKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addShowTimeKey",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addSpeedKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addStopKey",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addSubtitleSizeKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addVolumeKeys",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "defaultBindings",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "mediaControlsAllowed",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "message",
+    "kind": "method",
+    "owner": "KeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/live-transcoding",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "liveTranscodingPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/live-transcoding",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "LiveTranscodingPlugin"
+  },
+  {
+    "plugin": "video/live-transcoding",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "onServerMessage",
+    "kind": "method",
+    "owner": "LiveTranscodingPlugin"
+  },
+  {
+    "plugin": "video/live-transcoding",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "transcodedTo",
+    "kind": "method",
+    "owner": "LiveTranscodingPlugin"
+  },
+  {
+    "plugin": "video/live-transcoding",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "LiveTranscodingPlugin"
+  },
+  {
+    "plugin": "video/live-transcoding",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "waitFor",
+    "kind": "method",
+    "owner": "LiveTranscodingPlugin"
+  },
+  {
+    "plugin": "video/live-transcoding",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "controlUrl",
+    "kind": "option",
+    "owner": "LiveTranscodingOptions"
+  },
+  {
+    "plugin": "video/live-transcoding",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "pollIntervalMs",
+    "kind": "option",
+    "owner": "LiveTranscodingOptions"
+  },
+  {
+    "plugin": "video/live-transcoding",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "preferredHeight",
+    "kind": "option",
+    "owner": "LiveTranscodingOptions"
+  },
+  {
+    "plugin": "video/live-transcoding",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resumeAheadSeconds",
+    "kind": "option",
+    "owner": "LiveTranscodingOptions"
+  },
+  {
+    "plugin": "video/live-transcoding",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "seekTimeoutMs",
+    "kind": "option",
+    "owner": "LiveTranscodingOptions"
+  },
+  {
+    "plugin": "video/live-transcoding",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "wsUrl",
+    "kind": "option",
+    "owner": "LiveTranscodingOptions"
+  },
+  {
+    "plugin": "video/media-session",
+    "package": "video",
+    "file": "i18n/en.ts",
+    "exported": false,
+    "name": "translations",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/media-session",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "mediaSessionPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/media-session",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "getMetadata",
+    "kind": "method",
+    "owner": "MediaSessionPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "octopusPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "isFontEntry",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "applyActive",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "buildFontMap",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "destroy",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "fontNameFromUrl",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "fonts",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "initialize",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "load",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "loadCtor",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "renderer",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolveFontsForCurrent",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolveTrackUrl",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "revokeOwnedBlobs",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "subtitle",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "OctopusPlugin"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "availableFonts",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "debug",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "debug",
+    "kind": "option",
+    "owner": "OctopusOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "fallbackFont",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "fallbackFont",
+    "kind": "option",
+    "owner": "OctopusOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "fonts",
+    "kind": "option",
+    "owner": "OctopusOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "geometrySource",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "lazyFileLoading",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "lazyFileLoading",
+    "kind": "option",
+    "owner": "OctopusOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "legacyWorkerUrl",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "legacyWorkerUrl",
+    "kind": "option",
+    "owner": "OctopusOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "prescaleFactor",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "prescaleFactor",
+    "kind": "option",
+    "owner": "OctopusOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "renderAhead",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "renderAhead",
+    "kind": "option",
+    "owner": "OctopusOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "renderMode",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "renderMode",
+    "kind": "option",
+    "owner": "OctopusOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "targetFps",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "targetFps",
+    "kind": "option",
+    "owner": "OctopusOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "trackContent",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "video",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "workerUrl",
+    "kind": "option",
+    "owner": "SubtitleOctopusCtorOptions"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "workerUrl",
+    "kind": "option",
+    "owner": "OctopusOptions"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "NAMED_COLORS",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "STYLE_ID",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "subtitleOverlayPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "ensureStyles",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "getEdgeStyle",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "normalizeHex",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "parseColorToHex",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "rgbToHex",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "applyCuePositioningTo",
+    "kind": "method",
+    "owner": "SubtitleOverlayPlugin"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "applyStyleTo",
+    "kind": "method",
+    "owner": "SubtitleOverlayPlugin"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "avoidCueCollisions",
+    "kind": "method",
+    "owner": "SubtitleOverlayPlugin"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "bindOverlayToVideo",
+    "kind": "method",
+    "owner": "SubtitleOverlayPlugin"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "ensureAreaCount",
+    "kind": "method",
+    "owner": "SubtitleOverlayPlugin"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "renderCues",
+    "kind": "method",
+    "owner": "SubtitleOverlayPlugin"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "setLanguage",
+    "kind": "method",
+    "owner": "SubtitleOverlayPlugin"
+  },
+  {
+    "plugin": "video/subtitle-overlay",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "SubtitleOverlayPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "i18n/en.ts",
+    "exported": false,
+    "name": "translations",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "STYLE_ID",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "touchZonesPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": false,
+    "name": "ensureStyles",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "buildPlayback",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "buildSeekBack",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "buildSeekForward",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "buildVolDown",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "buildVolUp",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "createSeekIndicator",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "detectMobile",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dismissControls",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "doubleTap",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "makeBox",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "showSeekIndicator",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "wasControlsVisibleAtTapStart",
+    "kind": "method",
+    "owner": "TouchZonesPlugin"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "disableClickToPause",
+    "kind": "option",
+    "owner": "TouchZonesOptions"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "doubleTapThreshold",
+    "kind": "option",
+    "owner": "TouchZonesOptions"
+  },
+  {
+    "plugin": "video/touch-zones",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "seekSeconds",
+    "kind": "option",
+    "owner": "TouchZonesOptions"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "i18n/en.ts",
+    "exported": false,
+    "name": "translations",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "tvKeyHandlerPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addAspectRatioKeys",
+    "kind": "method",
+    "owner": "TvKeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addDefaults",
+    "kind": "method",
+    "owner": "TvKeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addHelpKey",
+    "kind": "method",
+    "owner": "TvKeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addInfoKey",
+    "kind": "method",
+    "owner": "TvKeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addMediaRecordKey",
+    "kind": "method",
+    "owner": "TvKeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addNavigationKeys",
+    "kind": "method",
+    "owner": "TvKeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "addVolumeKeys",
+    "kind": "method",
+    "owner": "TvKeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "osdMessage",
+    "kind": "method",
+    "owner": "TvKeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolveChapterLabel",
+    "kind": "method",
+    "owner": "TvKeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "resolveTitle",
+    "kind": "method",
+    "owner": "TvKeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "showInfoOsd",
+    "kind": "method",
+    "owner": "TvKeyHandlerPlugin"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "arrowSeekSeconds",
+    "kind": "option",
+    "owner": "TvKeyHandlerOptions"
+  },
+  {
+    "plugin": "video/tv-key-handler",
+    "package": "video",
+    "file": "index.ts",
+    "exported": true,
+    "name": "infoDisplayMs",
+    "kind": "option",
+    "owner": "TvKeyHandlerOptions"
+  }
+]
