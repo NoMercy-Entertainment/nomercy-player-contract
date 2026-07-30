@@ -20,7 +20,7 @@ import { PACKAGES } from './paths';
  * declaration the AST reports, whether or not anybody thought it mattered.
  */
 export interface SurfaceEntry {
-  /** `video/desktop-ui`, `core/key-handler`. */
+  /** `video/desktop-ui`, `core/controllers`, `core/src`. */
   plugin: string;
   package: 'core' | 'video' | 'music';
   /** File the declaration lives in, relative to the plugin. */
@@ -42,6 +42,38 @@ const SKIP_DIR: Set<string> = new Set(['__tests__', 'node_modules', 'dist']);
 // inactivityMs, buttonPriority and portraitHidden went missing — writing them at
 // the call site is a compile error, so the code that never wrote them compiled.
 const OPTION_SUFFIX: RegExp = /Options$/;
+
+/**
+ * Every top-level area of a package's source, not only its plugins.
+ *
+ * This read `src/plugins` alone, and the plugins are perhaps a third of each
+ * package: the controllers, the adapters, the ports, the state machine and the
+ * player classes' own logic were all outside it and graded by nothing except two
+ * classes' public method lists. A gate that measures a third of the source reports
+ * on a third of the port.
+ */
+function areaDirs(pkg: PackageName): string[] {
+  const root: string = resolve(PACKAGES[pkg], 'src');
+
+  let names: string[];
+
+  try {
+    names = readdirSync(root);
+  }
+  catch {
+    return [];
+  }
+
+  const dirs: string[] = names
+    .filter(name => !SKIP_DIR.has(name))
+    .map(name => resolve(root, name))
+    .filter(path => statSync(path).isDirectory());
+
+  // `src` itself, for the files that sit at its root — index.ts, the player class,
+  // v1-compat. Those are the most-used code in the package and were not in any
+  // subdirectory, so a walk of the subdirectories alone missed them entirely.
+  return [root, ...dirs];
+}
 
 function pluginDirs(pkg: PackageName): string[] {
   const root: string = resolve(PACKAGES[pkg], 'src', 'plugins');
@@ -174,12 +206,21 @@ export function extractPluginSurface(): SurfaceEntry[] {
   for (const pkg of ['core', 'video', 'music'] as PackageName[]) {
     const tsconfig: string = resolve(PACKAGES[pkg], 'tsconfig.json');
 
-    for (const dir of pluginDirs(pkg)) {
-      const plugin: string = `${pkg}/${dir.split(/[\\/]/).pop()}`;
+    // The plugins named individually, because a gap in one of thirty-one is a
+    // different statement from a gap "in the plugins", and everything else by area.
+    const seen: Set<string> = new Set();
+
+    for (const dir of [...pluginDirs(pkg), ...areaDirs(pkg)]) {
+      const area: string = `${pkg}/${dir.split(/[\\/]/).pop()}`;
       const project: Project = new Project({ tsConfigFilePath: tsconfig, skipAddingFilesFromTsConfig: true });
 
       for (const path of sourceFiles(dir)) {
-        entries.push(...readFile(project.addSourceFileAtPath(path), plugin, pkg, dir));
+        // src/ is walked as an area AND its subdirectories are walked on their
+        // own, so a file under one of them would otherwise count twice.
+        if (seen.has(path)) continue;
+        seen.add(path);
+
+        entries.push(...readFile(project.addSourceFileAtPath(path), area, pkg, dir));
       }
     }
   }
