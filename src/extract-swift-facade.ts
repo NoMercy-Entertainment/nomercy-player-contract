@@ -110,6 +110,27 @@ export const FACADE_RECONCILIATION: Record<string, string> = {
   selectAudio: 'setAudioTrack',
   selectSubtitle: 'setSubtitleTrack',
 
+  // The chrome surface the facade grew when the Apple bar reached parity: the
+  // toggles, the chapter jumps and the value states the transport bar reads.
+  hasNext: 'peekNext, answered as a Bool because the chrome only greys a button',
+  hasPrevious: 'peekPrevious, answered as a Bool for the same reason',
+  hasPlaylist: 'queueLength > 1, which is the same gate the web row uses',
+  chapters: 'chapters',
+  chapterBack: 'previousChapter',
+  chapterForward: 'nextChapter',
+  seekBack: 'time, stepped by the seek offset the web bar uses',
+  seekForward: 'time, stepped the other way',
+  isFullscreen: 'fullscreen',
+  setFullscreen: 'fullscreen',
+  isTheater: 'theater',
+  setTheater: 'theater',
+  isPictureInPicture: 'pip',
+  setPictureInPicture: 'pip',
+  rate: 'playbackRate',
+  setRate: 'playbackRate',
+  aspectRatio: 'aspectRatio',
+  setAspectRatio: 'aspectRatio',
+
   // Music.
   nowPlaying: 'currentItem',
   positionSeconds: 'currentTime',
