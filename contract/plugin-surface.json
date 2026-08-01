@@ -3824,6 +3824,94 @@
   {
     "plugin": "core/src",
     "package": "core",
+    "file": "adapters/quality/display-range.ts",
+    "exported": false,
+    "name": "PAGE_RANGE_QUERY",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "adapters/quality/display-range.ts",
+    "exported": false,
+    "name": "VIDEO_RANGE_QUERY",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "adapters/quality/display-range.ts",
+    "exported": true,
+    "name": "browserDisplayRangeProbe",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "adapters/quality/display-range.ts",
+    "exported": true,
+    "name": "detectDisplayHdr",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "adapters/quality/hdr-policy.ts",
+    "exported": true,
+    "name": "hdrAbrCeiling",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "adapters/quality/hdr-policy.ts",
+    "exported": true,
+    "name": "hdrDecision",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "adapters/quality/hdr-policy.ts",
+    "exported": false,
+    "name": "isHdr",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "adapters/quality/hdr-policy.ts",
+    "exported": true,
+    "name": "isHdrUnplayable",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "adapters/quality/size-policy.ts",
+    "exported": true,
+    "name": "abrCeiling",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "adapters/quality/size-policy.ts",
+    "exported": true,
+    "name": "panePixels",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "adapters/quality/size-policy.ts",
+    "exported": true,
+    "name": "sizeAbrCeiling",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
     "file": "adapters/realtime/IRealtimeChannel.ts",
     "exported": true,
     "name": "baseDelayMs",
@@ -14878,7 +14966,7 @@
     "package": "video",
     "file": "adapters/video-backend/html5.ts",
     "exported": true,
-    "name": "_applyHdrConstraint",
+    "name": "_applyAbrConstraints",
     "kind": "method",
     "owner": "Html5VideoBackend"
   },
@@ -14968,6 +15056,15 @@
     "package": "video",
     "file": "adapters/video-backend/html5.ts",
     "exported": true,
+    "name": "_schedulePaneReapply",
+    "kind": "method",
+    "owner": "Html5VideoBackend"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "adapters/video-backend/html5.ts",
+    "exported": true,
     "name": "_teardownAudioGraph",
     "kind": "method",
     "owner": "Html5VideoBackend"
@@ -14986,7 +15083,25 @@
     "package": "video",
     "file": "adapters/video-backend/html5.ts",
     "exported": true,
+    "name": "_teardownPaneResizeObserver",
+    "kind": "method",
+    "owner": "Html5VideoBackend"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "adapters/video-backend/html5.ts",
+    "exported": true,
     "name": "_wireHdrMatchMedia",
+    "kind": "method",
+    "owner": "Html5VideoBackend"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "adapters/video-backend/html5.ts",
+    "exported": true,
+    "name": "_wirePaneResizeObserver",
     "kind": "method",
     "owner": "Html5VideoBackend"
   },
@@ -15131,6 +15246,15 @@
     "file": "adapters/video-backend/html5.ts",
     "exported": true,
     "name": "setAudioTrack",
+    "kind": "method",
+    "owner": "Html5VideoBackend"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "adapters/video-backend/html5.ts",
+    "exported": true,
+    "name": "setHdrOnSdrFallback",
     "kind": "method",
     "owner": "Html5VideoBackend"
   },
