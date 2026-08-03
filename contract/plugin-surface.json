@@ -6394,6 +6394,15 @@
     "package": "core",
     "file": "core/mixins/loading.ts",
     "exported": false,
+    "name": "_mediaIsStale",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "core/mixins/loading.ts",
+    "exported": false,
     "name": "load",
     "kind": "method",
     "owner": "literal"
@@ -7112,6 +7121,14 @@
     "file": "core/mixins/queue.ts",
     "exported": false,
     "name": "_wireQueue",
+    "kind": "function"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "core/mixins/queue.ts",
+    "exported": true,
+    "name": "applyPendingSelection",
     "kind": "function"
   },
   {
