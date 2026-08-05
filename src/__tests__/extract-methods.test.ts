@@ -53,6 +53,15 @@ describe('extractMethods', () => {
     expect(methods.find(m => m.name === 'videoElement')?.kind).toBe('property');
   });
 
+  it('records every arity a method can be called with', () => {
+    // The picker takes nothing; a native routing call taking a device id is a
+    // different method wearing the same name.
+    expect(methods.find(m => m.name === 'selectAudioOutput')?.arities).toStrictEqual([0]);
+    // `volumeUp(step?)` is callable both ways.
+    expect(methods.find(m => m.name === 'volumeUp')?.arities).toStrictEqual([0, 1]);
+    expect(methods.find(m => m.name === 'volume' && m.player === 'video')?.arities).toStrictEqual([0, 1]);
+  });
+
   it('gives every method a group', () => {
     expect(methods.filter(m => !m.group)).toStrictEqual([]);
   });

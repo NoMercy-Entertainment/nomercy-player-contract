@@ -15,6 +15,11 @@ export interface MethodEntry {
   // without any name going missing. `property` is plain data, which a native
   // port answers with a val. The grader needs to know which is which.
   kind: 'accessor' | 'method' | 'property';
+  // Every parameter count the method can be called with, optional parameters
+  // expanded. A name alone does not identify a method: the web's
+  // `selectAudioOutput()` opens a system picker and a native
+  // `selectAudioOutput(id)` routes to a device, and only the arity says so.
+  arities: number[];
 }
 
 interface PlayerSpec {
@@ -65,6 +70,34 @@ function kindOf(typeNode: TypeNode | undefined): MethodEntry['kind'] {
   return reader && writer ? 'accessor' : 'method';
 }
 
+// Optional parameters expand: `volumeUp(step?: number)` is callable with none
+// and with one, and a native port answering only the one-argument form has not
+// ported the call site the web docs show.
+function aritiesOf(required: number, total: number): number[] {
+  const counts: number[] = [];
+  for (let count = required; count <= total; count += 1) counts.push(count);
+  return counts;
+}
+
+function signatureArities(typeNode: TypeNode | undefined): number[] {
+  if (!typeNode) return [];
+
+  const literal = typeNode.asKind(SyntaxKind.TypeLiteral);
+  const signatures = literal
+    ? literal.getMembers().map(member => member.asKind(SyntaxKind.CallSignature)).filter(signature => signature !== undefined)
+    : [typeNode.asKind(SyntaxKind.FunctionType)].filter(signature => signature !== undefined);
+
+  const counts = new Set<number>();
+
+  for (const signature of signatures) {
+    const parameters = signature.getParameters();
+    const required = parameters.filter(parameter => !parameter.isOptional() && !parameter.isRestParameter()).length;
+    for (const count of aritiesOf(required, parameters.length)) counts.add(count);
+  }
+
+  return [...counts].sort((a, b) => a - b);
+}
+
 function readClass(spec: PlayerSpec, groups: Map<string, string>): MethodEntry[] {
   const project: Project = new Project({ tsConfigFilePath: spec.tsconfig, skipAddingFilesFromTsConfig: true });
   const source = project.addSourceFileAtPath(spec.file);
@@ -82,6 +115,7 @@ function readClass(spec: PlayerSpec, groups: Map<string, string>): MethodEntry[]
       player: spec.player,
       group: groups.get(prop.getName()) ?? own,
       kind: kindOf(prop.getTypeNode()),
+      arities: signatureArities(prop.getTypeNode()),
     });
   }
 
@@ -95,6 +129,10 @@ function readClass(spec: PlayerSpec, groups: Map<string, string>): MethodEntry[]
       player: spec.player,
       group: groups.get(method.getName()) ?? own,
       kind: 'method',
+      arities: aritiesOf(
+        method.getParameters().filter(parameter => !parameter.isOptional() && !parameter.isRestParameter()).length,
+        method.getParameters().length,
+      ),
     });
   }
 

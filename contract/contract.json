@@ -894,2023 +894,2993 @@
       "signature": "{\n\t\t(): boolean;\n\t\t(enabled: boolean): void;\n\t}",
       "player": "music",
       "group": "core/activity",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "addClasses",
       "signature": "IPlayer<MusicEventMap>['addClasses']",
       "player": "music",
       "group": "core/dom",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "addPlugin",
       "signature": "<P extends Plugin<any, any, any>>(PluginClass: PluginCtorWithId & (new () => P), opts?: P['opts']) => this",
       "player": "music",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "addTranslations",
       "signature": "(bundle: Translations) => void",
       "player": "music",
       "group": "core/i18n",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "announce",
       "signature": "(text: string, level?: AriaLiveLevel) => void",
       "player": "music",
       "group": "core/metrics",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "audioContext",
       "signature": "() => AudioContext | undefined",
       "player": "music",
       "group": "core/base-url-audio-context",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "audioOutput",
       "signature": "{\n\t\t(): Promise<string | null>;\n\t\t(deviceId: string): Promise<void>;\n\t}",
       "player": "music",
       "group": "core/audio-output",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "audioOutputs",
       "signature": "() => Promise<MediaDeviceInfo[]>",
       "player": "music",
       "group": "core/audio-output",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "audioTrack",
       "signature": "{\n\t\t(): CurrentAudioTrackSelection | null;\n\t\t(idx: number): Promise<void>;\n\t}",
       "player": "music",
       "group": "core/media-tracks",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "audioTrackMode",
       "signature": "{\n\t\t(): AudioTrackState;\n\t\t(idx: number): void;\n\t}",
       "player": "music",
       "group": "core/player-state",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "audioTracks",
       "signature": "() => AudioTrack[]",
       "player": "music",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "auth",
       "signature": "{\n\t\t(): Readonly<AuthConfig> | undefined;\n\t\t(config: AuthConfig): void;\n\t\t(partial: Partial<AuthConfig>): void;\n\t\t(clear: null): void;\n\t}",
       "player": "music",
       "group": "core/auth",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "backend",
       "signature": "(kind?: AudioBackendKind) => IAudioBackend | Promise<void>",
       "player": "music",
       "group": "music/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "backlog",
       "signature": "{\n\t\t(): ReadonlyArray<T>;\n\t\t(items: T[]): void;\n\t}",
       "player": "music",
       "group": "core/queue",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "backlogAppend",
       "signature": "(item: T | T[]) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "backlogClear",
       "signature": "() => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "backlogRemove",
       "signature": "(id: string | number) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "bandwidth",
       "signature": "() => number",
       "player": "music",
       "group": "core/abr",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "bandwidthEstimator",
       "signature": "{\n\t\t(): (() => number) | undefined;\n\t\t(fn: () => number): void;\n\t}",
       "player": "music",
       "group": "core/abr",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "baseUrl",
       "signature": "{\n\t\t(): string | undefined;\n\t\t(url: string): void;\n\t}",
       "player": "music",
       "group": "core/base-url-audio-context",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "bufferState",
       "signature": "() => BufferState",
       "player": "music",
       "group": "core/player-state",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "buffered",
       "signature": "() => number",
       "player": "music",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "bufferedRanges",
       "signature": "() => TimeRanges",
       "player": "music",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "bumpActivity",
       "signature": "() => void",
       "player": "music",
       "group": "core/activity",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "canPlay",
       "signature": "(profile: { contentType: string; width?: number; height?: number; bitrate?: number; framerate?: number }) => Promise<CanPlayResult>",
       "player": "music",
       "group": "core/abr",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "castState",
       "signature": "() => CastState",
       "player": "music",
       "group": "core/cast",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "chapter",
       "signature": "{\n\t\t(): Chapter | null;\n\t\t(idx: number): void;\n\t}",
       "player": "music",
       "group": "core/media-tracks",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "chapters",
       "signature": "() => Chapter[]",
       "player": "music",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "container",
       "signature": "HTMLElement",
       "player": "music",
       "group": "music/player",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "createButton",
       "signature": "IPlayer<MusicEventMap>['createButton']",
       "player": "music",
       "group": "core/dom",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "createElement",
       "signature": "IPlayer<MusicEventMap>['createElement']",
       "player": "music",
       "group": "core/dom",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "createSVG",
       "signature": "IPlayer<MusicEventMap>['createSVG']",
       "player": "music",
       "group": "core/dom",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "crossfadeTo",
       "signature": "(item: T, opts?: CrossfadeOptions & ActionOptions) => Promise<void>",
       "player": "music",
       "group": "music/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "device",
       "signature": "() => DeviceCapabilities",
       "player": "music",
       "group": "core/device",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "dispatching",
       "signature": "() => ReadonlyArray<string>",
       "player": "music",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "dispose",
       "signature": "() => Promise<void>",
       "player": "music",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "duration",
       "signature": "() => number",
       "player": "music",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "enabledPlugins",
       "signature": "() => ReadonlyArray<Plugin>",
       "player": "music",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "experimental",
       "signature": "PlayerExperimental",
       "player": "music",
       "group": "core/experimental",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "forward",
       "signature": "(seconds?: number, opts?: ActionOptions) => Promise<void>",
       "player": "music",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "name": "getPlugin",
       "signature": "<P extends object>(PluginClass: PluginCtorWithId & (new () => P)) => P | undefined",
       "player": "music",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "getPluginById",
       "signature": "<P extends object = object>(id: string) => P | undefined",
       "player": "music",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "getStreamFactory",
       "signature": "(id: string) => IStreamFactory | undefined",
       "player": "music",
       "group": "core/stream-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "index",
       "signature": "() => number",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "isDesktop",
       "signature": "() => boolean",
       "player": "music",
       "group": "core/device",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "isMobile",
       "signature": "() => boolean",
       "player": "music",
       "group": "core/device",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "isTransitioning",
       "signature": "() => boolean",
       "player": "music",
       "group": "music/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "isTv",
       "signature": "() => boolean",
       "player": "music",
       "group": "core/device",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "item",
       "signature": "{\n\t\t(): T | undefined;\n\t\t(target: T | string | number, opts?: LoadOptions): void;\n\t}",
       "player": "music",
       "group": "core/queue",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "name": "language",
       "signature": "{\n\t\t(): string;\n\t\t(lang: string): Promise<void>;\n\t}",
       "player": "music",
       "group": "core/i18n",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "load",
       "signature": "(item: T, opts?: LoadOptions) => Promise<void>",
       "player": "music",
       "group": "core/loading",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "loadQueue",
       "signature": "(url: string, parser?: (raw: string) => T[]) => Promise<void>",
       "player": "music",
       "group": "core/loading",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "metrics",
       "signature": "() => PlaybackMetrics",
       "player": "music",
       "group": "core/metrics",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "mute",
       "signature": "() => Promise<void>",
       "player": "music",
       "group": "core/volume",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "networkState",
       "signature": "() => NetworkState",
       "player": "music",
       "group": "core/player-state",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "next",
       "signature": "(opts?: LoadOptions) => Promise<void>",
       "player": "music",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "nextChapter",
       "signature": "(opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "now",
       "signature": "() => number",
       "player": "music",
       "group": "core/metrics",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "options",
       "signature": "MusicPlayerConfig<T>",
       "player": "music",
       "group": "music/player",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "pause",
       "signature": "(opts?: ActionOptions) => Promise<void>",
       "player": "music",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "peekNext",
       "signature": "() => T | undefined",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "peekPrevious",
       "signature": "() => T | undefined",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "phase",
       "signature": "() => PlayerPhase",
       "player": "music",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "platform",
       "signature": "() => IPlatform",
       "player": "music",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "play",
       "signature": "(opts?: ActionOptions) => Promise<void>",
       "player": "music",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "playItem",
       "signature": "(\n\t\ttarget: BasePlaylistItem | string | number | ((item: BasePlaylistItem) => boolean),\n\t\topts?: LoadOptions,\n\t) => void",
       "player": "music",
       "group": "core/play-queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "playNow",
       "signature": "(\n\t\titems: BasePlaylistItem[],\n\t\tstart?: BasePlaylistItem | string | number | ((item: BasePlaylistItem) => boolean),\n\t\topts?: LoadOptions,\n\t) => void",
       "player": "music",
       "group": "core/play-queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "name": "playState",
       "signature": "() => PlayState",
       "player": "music",
       "group": "core/state-mutators",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "playbackRate",
       "signature": "{\n\t\t(): number;\n\t\t(rate: number): Promise<void>;\n\t}",
       "player": "music",
       "group": "core/time",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "playbackRates",
       "signature": "() => number[]",
       "player": "music",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "playerId",
       "signature": "string",
       "player": "music",
       "group": "music/player",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "plugins",
       "signature": "() => ReadonlyArray<Plugin>",
       "player": "music",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "preloadStrategy",
       "signature": "() => IPreloadStrategy",
       "player": "music",
       "group": "core/preload-strategy",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "previous",
       "signature": "(opts?: LoadOptions) => Promise<void>",
       "player": "music",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "previousChapter",
       "signature": "(opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "quality",
       "signature": "{\n\t\t(): CurrentQualitySelection | 'auto';\n\t\t(idx: number | 'auto'): void;\n\t}",
       "player": "music",
       "group": "core/media-tracks",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "qualityLevels",
       "signature": "{\n\t\t(): QualityLevel[];\n\t\t(opts: { includeUnsupported: true }): QualityLevel[];\n\t}",
       "player": "music",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "qualityMode",
       "signature": "{\n\t\t(): QualityState;\n\t\t(target: number | 'auto'): void;\n\t}",
       "player": "music",
       "group": "core/player-state",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "queue",
       "signature": "{\n\t\t(): ReadonlyArray<T>;\n\t\t(items: T[], opts?: ActionOptions): void;\n\t}",
       "player": "music",
       "group": "core/queue",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "name": "queueAppend",
       "signature": "(item: T | T[], opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "queueClear",
       "signature": "(opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "queueIndexOf",
       "signature": "(id: string | number) => number",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "queueInsert",
       "signature": "(item: T | T[], index: number, opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        2,
+        3
+      ]
     },
     {
       "name": "queueLength",
       "signature": "() => number",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "queueMove",
       "signature": "(from: number, to: number, opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        2,
+        3
+      ]
     },
     {
       "name": "queuePrepend",
       "signature": "(item: T | T[], opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "queueRemove",
       "signature": "(id: string | number, opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "queueRemoveAt",
       "signature": "(index: number, opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "queueShuffle",
       "signature": "(opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "queueSort",
       "signature": "(compare: (itemA: T, itemB: T) => number, opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "ready",
       "signature": "() => Promise<void>",
       "player": "music",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "recordMetric",
       "signature": "(name: string, value: number) => void",
       "player": "music",
       "group": "core/metrics",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        2
+      ]
     },
     {
       "name": "refreshAuth",
       "signature": "() => Promise<void>",
       "player": "music",
       "group": "core/auth",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "registerCueParser",
       "signature": "(parser: ICueParser, prepend?: boolean) => void",
       "player": "music",
       "group": "core/cue-parser",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "registerStream",
       "signature": "(factory: IStreamFactory, prepend?: boolean) => this",
       "player": "music",
       "group": "core/stream-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "registerTitleTokens",
       "signature": "(tokens: Record<string, string>) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "removeClasses",
       "signature": "IPlayer<MusicEventMap>['removeClasses']",
       "player": "music",
       "group": "core/dom",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "removePlugin",
       "signature": "<P extends Plugin<any, any, any>>(PluginClass: PluginCtorWithId & (new () => P)) => void",
       "player": "music",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "removePluginById",
       "signature": "(id: string) => void",
       "player": "music",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "removeTranslations",
       "signature": "(prefix: string, lang?: string) => void",
       "player": "music",
       "group": "core/i18n",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "repeatState",
       "signature": "{\n\t\t(): RepeatState;\n\t\t(state: RepeatState): Promise<void>;\n\t}",
       "player": "music",
       "group": "core/state-mutators",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "resolveCueParser",
       "signature": "(url: string) => ICueParser | undefined",
       "player": "music",
       "group": "core/cue-parser",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "resolveUrl",
       "signature": "(url: string, category?: UrlCategory) => Promise<ResolvedUrl>",
       "player": "music",
       "group": "core/auth",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "restart",
       "signature": "(opts?: ActionOptions) => Promise<void>",
       "player": "music",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "rewind",
       "signature": "(seconds?: number, opts?: ActionOptions) => Promise<void>",
       "player": "music",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "name": "seekByPercentage",
       "signature": "(pct: number, opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "seekToChapter",
       "signature": "(idx: number, opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "seekToIndex",
       "signature": "(position: number, opts?: ActionOptions) => void",
       "player": "music",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "seekable",
       "signature": "() => TimeRanges",
       "player": "music",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "selectAudioOutput",
       "signature": "() => Promise<MediaDeviceInfo | null>",
       "player": "music",
       "group": "core/audio-output",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "setPreloadStrategy",
       "signature": "(strategy: IPreloadStrategy) => void",
       "player": "music",
       "group": "core/preload-strategy",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "setTransitionStrategy",
       "signature": "(strategy: ITransitionStrategy) => void",
       "player": "music",
       "group": "core/preload-strategy",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "setup",
       "signature": "(config: MusicPlayerConfig<T>) => this",
       "player": "music",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "setupState",
       "signature": "() => SetupState",
       "player": "music",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "shuffleState",
       "signature": "{\n\t\t(): ShuffleState;\n\t\t(state: ShuffleState | boolean): Promise<void>;\n\t}",
       "player": "music",
       "group": "core/state-mutators",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "stop",
       "signature": "(opts?: ActionOptions) => Promise<void>",
       "player": "music",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "streamState",
       "signature": "() => string",
       "player": "music",
       "group": "core/player-state",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "streams",
       "signature": "() => ReadonlyArray<string>",
       "player": "music",
       "group": "core/stream-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "t",
       "signature": "{\n\t\t(key: string, vars?: Record<string, string>): string;\n\t\t(PluginClass: PluginCtorWithId, key: string, vars?: Record<string, string>): string;\n\t}",
       "player": "music",
       "group": "core/i18n",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "name": "time",
       "signature": "{\n\t\t(): number;\n\t\t(seconds: number, opts?: ActionOptions): Promise<void>;\n\t}",
       "player": "music",
       "group": "core/time",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "name": "timeData",
       "signature": "() => KitTimeState",
       "player": "music",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "toggleMute",
       "signature": "() => void",
       "player": "music",
       "group": "core/volume",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "togglePlayback",
       "signature": "(opts?: ActionOptions) => Promise<void>",
       "player": "music",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "transferTo",
       "signature": "(target: CastTarget) => Promise<void>",
       "player": "music",
       "group": "core/cast",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "transitionStrategy",
       "signature": "() => ITransitionStrategy",
       "player": "music",
       "group": "core/preload-strategy",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "translation",
       "signature": "{\n\t\t(lang: string, key: string): string | undefined;\n\t\t(lang: string, key: string, value: string): void;\n\t}",
       "player": "music",
       "group": "core/i18n",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        2,
+        3
+      ]
     },
     {
       "name": "unmute",
       "signature": "() => Promise<void>",
       "player": "music",
       "group": "core/volume",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "unregisterCueParser",
       "signature": "(id: string) => void",
       "player": "music",
       "group": "core/cue-parser",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "unregisterStream",
       "signature": "(id: string) => this",
       "player": "music",
       "group": "core/stream-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "urlResolver",
       "signature": "{\n\t\t(): IUrlResolver | undefined;\n\t\t(resolver: IUrlResolver | undefined): void;\n\t}",
       "player": "music",
       "group": "core/auth",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "visibilityState",
       "signature": "() => VisibilityState",
       "player": "music",
       "group": "core/player-state",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "volume",
       "signature": "{\n\t\t(): number;\n\t\t(level: number): Promise<void>;\n\t}",
       "player": "music",
       "group": "core/volume",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "volumeDown",
       "signature": "(step?: number) => void",
       "player": "music",
       "group": "core/volume",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "volumeState",
       "signature": "() => VolumeState",
       "player": "music",
       "group": "core/state-mutators",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "volumeUp",
       "signature": "(step?: number) => void",
       "player": "music",
       "group": "core/volume",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "activityTracking",
       "signature": "{\n\t\t(): boolean;\n\t\t(enabled: boolean): void;\n\t}",
       "player": "video",
       "group": "core/activity",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "addClasses",
       "signature": "IPlayer<VideoEventMap>['addClasses']",
       "player": "video",
       "group": "core/dom",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "addPlugin",
       "signature": "<P extends Plugin<any, any, any>>(PluginClass: PluginCtorWithId & (new () => P), opts?: P['opts']) => this",
       "player": "video",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "addSubtitleTrack",
       "signature": "(track: SidecarSubtitleInput, opts?: ActionOptions) => SubtitleTrack",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "addTranslations",
       "signature": "(bundle: Translations) => void",
       "player": "video",
       "group": "core/i18n",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "announce",
       "signature": "(text: string, level?: AriaLiveLevel) => void",
       "player": "video",
       "group": "core/metrics",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "aspectRatio",
       "signature": "(value?: Stretching) => Stretching | void",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "audioContext",
       "signature": "() => AudioContext | undefined",
       "player": "video",
       "group": "core/base-url-audio-context",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "audioOutput",
       "signature": "{\n\t\t(): Promise<string | null>;\n\t\t(deviceId: string): Promise<void>;\n\t}",
       "player": "video",
       "group": "core/audio-output",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "audioOutputs",
       "signature": "() => Promise<MediaDeviceInfo[]>",
       "player": "video",
       "group": "core/audio-output",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "audioTrack",
       "signature": "{\n\t\t(): CurrentAudioTrackSelection | null;\n\t\t(idx: number): Promise<void>;\n\t}",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "audioTrackMode",
       "signature": "{\n\t\t(): AudioTrackState;\n\t\t(idx: number): void;\n\t}",
       "player": "video",
       "group": "core/player-state",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "audioTracks",
       "signature": "() => AudioTrack[]",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "auth",
       "signature": "{\n\t\t(): Readonly<AuthConfig> | undefined;\n\t\t(config: AuthConfig): void;\n\t\t(partial: Partial<AuthConfig>): void;\n\t\t(clear: null): void;\n\t}",
       "player": "video",
       "group": "core/auth",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "backend",
       "signature": "(kind?: VideoBackendKind) => IVideoBackend | Promise<void>",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "backlog",
       "signature": "{\n\t\t(): ReadonlyArray<T>;\n\t\t(items: T[]): void;\n\t}",
       "player": "video",
       "group": "core/queue",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "backlogAppend",
       "signature": "(item: T | T[]) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "backlogClear",
       "signature": "() => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "backlogRemove",
       "signature": "(id: string | number) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "bandwidth",
       "signature": "() => number",
       "player": "video",
       "group": "core/abr",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "bandwidthEstimator",
       "signature": "{\n\t\t(): (() => number) | undefined;\n\t\t(fn: () => number): void;\n\t}",
       "player": "video",
       "group": "core/abr",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "baseUrl",
       "signature": "{\n\t\t(): string | undefined;\n\t\t(url: string): void;\n\t}",
       "player": "video",
       "group": "core/base-url-audio-context",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "bufferState",
       "signature": "() => BufferState",
       "player": "video",
       "group": "core/player-state",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "buffered",
       "signature": "() => number",
       "player": "video",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "bufferedRanges",
       "signature": "() => TimeRanges",
       "player": "video",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "bumpActivity",
       "signature": "() => void",
       "player": "video",
       "group": "core/activity",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "canPlay",
       "signature": "(profile: { contentType: string; width?: number; height?: number; bitrate?: number; framerate?: number }) => Promise<CanPlayResult>",
       "player": "video",
       "group": "core/abr",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "castState",
       "signature": "() => CastState",
       "player": "video",
       "group": "core/cast",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "chapter",
       "signature": "{\n\t\t(): Chapter | null;\n\t\t(idx: number): void;\n\t}",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "chapters",
       "signature": "() => Chapter[]",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "clearSegment",
       "signature": "() => void",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "container",
       "signature": "HTMLElement",
       "player": "video",
       "group": "video/player",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "createButton",
       "signature": "IPlayer<VideoEventMap>['createButton']",
       "player": "video",
       "group": "core/dom",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "createElement",
       "signature": "IPlayer<VideoEventMap>['createElement']",
       "player": "video",
       "group": "core/dom",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "createSVG",
       "signature": "IPlayer<VideoEventMap>['createSVG']",
       "player": "video",
       "group": "core/dom",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "cycleAspectRatio",
       "signature": "() => void",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "cycleAudioTracks",
       "signature": "() => void",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "cycleSubtitles",
       "signature": "() => void",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "device",
       "signature": "() => DeviceCapabilities",
       "player": "video",
       "group": "core/device",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "dispatching",
       "signature": "() => ReadonlyArray<string>",
       "player": "video",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "dispose",
       "signature": "() => Promise<void>",
       "player": "video",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "duration",
       "signature": "() => number",
       "player": "video",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "enabledPlugins",
       "signature": "() => ReadonlyArray<Plugin>",
       "player": "video",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "experimental",
       "signature": "PlayerExperimental",
       "player": "video",
       "group": "core/experimental",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "forward",
       "signature": "(seconds?: number, opts?: ActionOptions) => Promise<void>",
       "player": "video",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "name": "fullscreen",
       "signature": "(state?: FullscreenState | boolean) => FullscreenState | void",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "getPlugin",
       "signature": "<P extends object>(PluginClass: PluginCtorWithId & (new () => P)) => P | undefined",
       "player": "video",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "getPluginById",
       "signature": "<P extends object = object>(id: string) => P | undefined",
       "player": "video",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "getStreamFactory",
       "signature": "(id: string) => IStreamFactory | undefined",
       "player": "video",
       "group": "core/stream-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "index",
       "signature": "() => number",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "isDesktop",
       "signature": "() => boolean",
       "player": "video",
       "group": "core/device",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "isMobile",
       "signature": "() => boolean",
       "player": "video",
       "group": "core/device",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "isTv",
       "signature": "() => boolean",
       "player": "video",
       "group": "core/device",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "item",
       "signature": "{\n\t\t(): T | undefined;\n\t\t(target: T | string | number, opts?: LoadOptions): void;\n\t}",
       "player": "video",
       "group": "core/queue",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "name": "language",
       "signature": "{\n\t\t(): string;\n\t\t(lang: string): Promise<void>;\n\t}",
       "player": "video",
       "group": "core/i18n",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "load",
       "signature": "(item: T, opts?: LoadOptions) => Promise<void>",
       "player": "video",
       "group": "core/loading",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "loadQueue",
       "signature": "(url: string, parser?: (raw: string) => T[]) => Promise<void>",
       "player": "video",
       "group": "core/loading",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "metrics",
       "signature": "() => PlaybackMetrics",
       "player": "video",
       "group": "core/metrics",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "mute",
       "signature": "() => Promise<void>",
       "player": "video",
       "group": "core/volume",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "networkState",
       "signature": "() => NetworkState",
       "player": "video",
       "group": "core/player-state",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "next",
       "signature": "(opts?: LoadOptions) => Promise<void>",
       "player": "video",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "nextChapter",
       "signature": "(opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "normalizePlaylistItem",
       "signature": "(item: BasePlaylistItem) => BasePlaylistItem",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "now",
       "signature": "() => number",
       "player": "video",
       "group": "core/metrics",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "options",
       "signature": "VideoPlayerConfig<T>",
       "player": "video",
       "group": "video/player",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "pause",
       "signature": "(opts?: ActionOptions) => Promise<void>",
       "player": "video",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "peekNext",
       "signature": "() => T | undefined",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "peekPrevious",
       "signature": "() => T | undefined",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "phase",
       "signature": "() => PlayerPhase",
       "player": "video",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "pip",
       "signature": "(state?: PipState | boolean) => PipState | void",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "platform",
       "signature": "() => IPlatform",
       "player": "video",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "play",
       "signature": "(opts?: ActionOptions) => Promise<void>",
       "player": "video",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "playItem",
       "signature": "(\n\t\ttarget: BasePlaylistItem | string | number | ((item: BasePlaylistItem) => boolean),\n\t\topts?: LoadOptions,\n\t) => void",
       "player": "video",
       "group": "core/play-queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "playNow",
       "signature": "(\n\t\titems: BasePlaylistItem[],\n\t\tstart?: BasePlaylistItem | string | number | ((item: BasePlaylistItem) => boolean),\n\t\topts?: LoadOptions,\n\t) => void",
       "player": "video",
       "group": "core/play-queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "name": "playSegment",
       "signature": "(opts: SegmentOptions) => void",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "playState",
       "signature": "() => PlayState",
       "player": "video",
       "group": "core/state-mutators",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "playbackRate",
       "signature": "{\n\t\t(): number;\n\t\t(rate: number): Promise<void>;\n\t}",
       "player": "video",
       "group": "core/time",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "playbackRates",
       "signature": "() => number[]",
       "player": "video",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "playerId",
       "signature": "string",
       "player": "video",
       "group": "video/player",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "plugins",
       "signature": "() => ReadonlyArray<Plugin>",
       "player": "video",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "preloadStrategy",
       "signature": "() => IPreloadStrategy",
       "player": "video",
       "group": "core/preload-strategy",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "previous",
       "signature": "(opts?: LoadOptions) => Promise<void>",
       "player": "video",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "previousChapter",
       "signature": "(opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "quality",
       "signature": "{\n\t\t(): CurrentQualitySelection | 'auto';\n\t\t(idx: number | 'auto'): void;\n\t}",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "qualityLevels",
       "signature": "{\n\t\t(): QualityLevel[];\n\t\t(opts: { includeUnsupported: true }): QualityLevel[];\n\t}",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "qualityMode",
       "signature": "{\n\t\t(): QualityState;\n\t\t(target: number | 'auto'): void;\n\t}",
       "player": "video",
       "group": "core/player-state",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "queue",
       "signature": "{\n\t\t(): ReadonlyArray<T>;\n\t\t(items: T[], opts?: ActionOptions): void;\n\t}",
       "player": "video",
       "group": "core/queue",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "name": "queueAppend",
       "signature": "(item: T | T[], opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "queueClear",
       "signature": "(opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "queueIndexOf",
       "signature": "(id: string | number) => number",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "queueInsert",
       "signature": "(item: T | T[], index: number, opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        2,
+        3
+      ]
     },
     {
       "name": "queueLength",
       "signature": "() => number",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "queueMove",
       "signature": "(from: number, to: number, opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        2,
+        3
+      ]
     },
     {
       "name": "queuePrepend",
       "signature": "(item: T | T[], opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "queueRemove",
       "signature": "(id: string | number, opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "queueRemoveAt",
       "signature": "(index: number, opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "queueShuffle",
       "signature": "(opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "queueSort",
       "signature": "(compare: (itemA: T, itemB: T) => number, opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "ready",
       "signature": "() => Promise<void>",
       "player": "video",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "recordMetric",
       "signature": "(name: string, value: number) => void",
       "player": "video",
       "group": "core/metrics",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        2
+      ]
     },
     {
       "name": "refreshAuth",
       "signature": "() => Promise<void>",
       "player": "video",
       "group": "core/auth",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "registerCueParser",
       "signature": "(parser: ICueParser, prepend?: boolean) => void",
       "player": "video",
       "group": "core/cue-parser",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "registerStream",
       "signature": "(factory: IStreamFactory, prepend?: boolean) => this",
       "player": "video",
       "group": "core/stream-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "registerTitleTokens",
       "signature": "(tokens: Record<string, string>) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "removeClasses",
       "signature": "IPlayer<VideoEventMap>['removeClasses']",
       "player": "video",
       "group": "core/dom",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "removePlugin",
       "signature": "<P extends Plugin<any, any, any>>(PluginClass: PluginCtorWithId & (new () => P)) => void",
       "player": "video",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "removePluginById",
       "signature": "(id: string) => void",
       "player": "video",
       "group": "core/plugin-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "removeSubtitleTrack",
       "signature": "(id: string, opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "removeTranslations",
       "signature": "(prefix: string, lang?: string) => void",
       "player": "video",
       "group": "core/i18n",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "repeatState",
       "signature": "{\n\t\t(): RepeatState;\n\t\t(state: RepeatState): Promise<void>;\n\t}",
       "player": "video",
       "group": "core/state-mutators",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "resolveCueParser",
       "signature": "(url: string) => ICueParser | undefined",
       "player": "video",
       "group": "core/cue-parser",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "resolveUrl",
       "signature": "(url: string, category?: UrlCategory) => Promise<ResolvedUrl>",
       "player": "video",
       "group": "core/auth",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "restart",
       "signature": "(opts?: ActionOptions) => Promise<void>",
       "player": "video",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "rewind",
       "signature": "(seconds?: number, opts?: ActionOptions) => Promise<void>",
       "player": "video",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "name": "seekByPercentage",
       "signature": "(pct: number, opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "seekToChapter",
       "signature": "(idx: number, opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "seekToIndex",
       "signature": "(position: number, opts?: ActionOptions) => void",
       "player": "video",
       "group": "core/queue",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2
+      ]
     },
     {
       "name": "seekable",
       "signature": "() => TimeRanges",
       "player": "video",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "selectAudioOutput",
       "signature": "() => Promise<MediaDeviceInfo | null>",
       "player": "video",
       "group": "core/audio-output",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "setPreloadStrategy",
       "signature": "(strategy: IPreloadStrategy) => void",
       "player": "video",
       "group": "core/preload-strategy",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "setTransitionStrategy",
       "signature": "(strategy: ITransitionStrategy) => void",
       "player": "video",
       "group": "core/preload-strategy",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "setup",
       "signature": "(config: VideoPlayerConfig<T>) => this",
       "player": "video",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "setupState",
       "signature": "() => SetupState",
       "player": "video",
       "group": "core/lifecycle",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "shuffleState",
       "signature": "{\n\t\t(): ShuffleState;\n\t\t(state: ShuffleState | boolean): Promise<void>;\n\t}",
       "player": "video",
       "group": "core/state-mutators",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "stop",
       "signature": "(opts?: ActionOptions) => Promise<void>",
       "player": "video",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "streamState",
       "signature": "() => string",
       "player": "video",
       "group": "core/player-state",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "streams",
       "signature": "() => ReadonlyArray<string>",
       "player": "video",
       "group": "core/stream-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "subtitle",
       "signature": "{\n\t\t(): CurrentSubtitleSelection | null;\n\t\t(idx: number | null): Promise<void>;\n\t}",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "subtitleState",
       "signature": "() => SubtitleState",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "subtitleStyle",
       "signature": "{\n\t\t(): SubtitleStyle;\n\t\t(patch: Partial<SubtitleStyle>): void;\n\t}",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "subtitles",
       "signature": "() => SubtitleTrack[]",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "t",
       "signature": "{\n\t\t(key: string, vars?: Record<string, string>): string;\n\t\t(PluginClass: PluginCtorWithId, key: string, vars?: Record<string, string>): string;\n\t}",
       "player": "video",
       "group": "core/i18n",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "name": "theater",
       "signature": "(state?: TheaterState | boolean) => TheaterState | void",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "time",
       "signature": "{\n\t\t(): number;\n\t\t(seconds: number, opts?: ActionOptions): Promise<void>;\n\t}",
       "player": "video",
       "group": "core/time",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "name": "timeData",
       "signature": "() => KitTimeState",
       "player": "video",
       "group": "core/time",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "toggleFullscreen",
       "signature": "() => void",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "toggleMute",
       "signature": "() => void",
       "player": "video",
       "group": "core/volume",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "togglePip",
       "signature": "() => void",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "togglePlayback",
       "signature": "(opts?: ActionOptions) => Promise<void>",
       "player": "video",
       "group": "core/transport",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "toggleTheater",
       "signature": "() => void",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "transferTo",
       "signature": "(target: CastTarget) => Promise<void>",
       "player": "video",
       "group": "core/cast",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "transitionStrategy",
       "signature": "() => ITransitionStrategy",
       "player": "video",
       "group": "core/preload-strategy",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "translation",
       "signature": "{\n\t\t(lang: string, key: string): string | undefined;\n\t\t(lang: string, key: string, value: string): void;\n\t}",
       "player": "video",
       "group": "core/i18n",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        2,
+        3
+      ]
     },
     {
       "name": "unmute",
       "signature": "() => Promise<void>",
       "player": "video",
       "group": "core/volume",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "unregisterCueParser",
       "signature": "(id: string) => void",
       "player": "video",
       "group": "core/cue-parser",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "unregisterStream",
       "signature": "(id: string) => this",
       "player": "video",
       "group": "core/stream-registration",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        1
+      ]
     },
     {
       "name": "urlResolver",
       "signature": "{\n\t\t(): IUrlResolver | undefined;\n\t\t(resolver: IUrlResolver | undefined): void;\n\t}",
       "player": "video",
       "group": "core/auth",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "videoElement",
       "signature": "HTMLVideoElement | undefined",
       "player": "video",
       "group": "video/player",
-      "kind": "property"
+      "kind": "property",
+      "arities": []
     },
     {
       "name": "videoRect",
       "signature": "() => VideoRect | null",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "visibilityState",
       "signature": "() => VisibilityState",
       "player": "video",
       "group": "core/player-state",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "volume",
       "signature": "{\n\t\t(): number;\n\t\t(level: number): Promise<void>;\n\t}",
       "player": "video",
       "group": "core/volume",
-      "kind": "accessor"
+      "kind": "accessor",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "volumeDown",
       "signature": "(step?: number) => void",
       "player": "video",
       "group": "core/volume",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     },
     {
       "name": "volumeState",
       "signature": "() => VolumeState",
       "player": "video",
       "group": "core/state-mutators",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0
+      ]
     },
     {
       "name": "volumeUp",
       "signature": "(step?: number) => void",
       "player": "video",
       "group": "core/volume",
-      "kind": "method"
+      "kind": "method",
+      "arities": [
+        0,
+        1
+      ]
     }
   ],
   "errors": [
