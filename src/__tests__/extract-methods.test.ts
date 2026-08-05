@@ -26,4 +26,22 @@ describe('extractMethods', () => {
   it('excludes private and phantom-brand members', () => {
     expect(names.some(n => n.startsWith('_'))).toBe(false);
   });
+
+  it('files a kit method under the mixin that declares it', () => {
+    expect(methods.find(m => m.name === 'play' && m.player === 'video')?.group).toBe('core/transport');
+    expect(methods.find(m => m.name === 'volume' && m.player === 'music')?.group).toBe('core/volume');
+  });
+
+  it('files a library-only method under the library itself', () => {
+    expect(methods.find(m => m.name === 'toggleFullscreen')?.group).toBe('video/player');
+  });
+
+  it('marks a stateful noun as an accessor and a verb as a method', () => {
+    expect(methods.find(m => m.name === 'volume' && m.player === 'video')?.kind).toBe('accessor');
+    expect(methods.find(m => m.name === 'play' && m.player === 'video')?.kind).toBe('method');
+  });
+
+  it('gives every method a group', () => {
+    expect(methods.filter(m => !m.group)).toStrictEqual([]);
+  });
 });
