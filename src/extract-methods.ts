@@ -12,8 +12,9 @@ export interface MethodEntry {
   group: string;
   // `accessor` is the stateful-noun pair — `quality()` reads, `quality(level)`
   // writes — which a native port answers with two overloads and can half-port
-  // without any name going missing. The grader needs to know which is which.
-  kind: 'accessor' | 'method';
+  // without any name going missing. `property` is plain data, which a native
+  // port answers with a val. The grader needs to know which is which.
+  kind: 'accessor' | 'method' | 'property';
 }
 
 interface PlayerSpec {
@@ -34,15 +35,34 @@ function isPublic(name: string): boolean {
   return !name.startsWith('_');
 }
 
-// A stateful noun is declared as a type literal carrying more than one call
-// signature — the reader and the writer. One call signature is a plain method.
+// A stateful noun is a reader and a writer sharing one name: a call taking
+// nothing and returning the value, and a call taking the value and returning
+// nothing.
+//
+// Counting call signatures is not enough. `t(key)` / `t(PluginClass, key)` and
+// `qualityLevels()` / `qualityLevels(opts)` are overloaded readers — two
+// signatures, no writer — and grading them as pairs demands a native setter
+// that should not exist. The writer's `void` return is what tells them apart.
 function kindOf(typeNode: TypeNode | undefined): MethodEntry['kind'] {
-  const literal = typeNode?.asKind(SyntaxKind.TypeLiteral);
-  if (!literal) return 'method';
+  if (!typeNode) return 'property';
 
-  return literal.getMembers().filter(member => member.asKind(SyntaxKind.CallSignature)).length > 1
-    ? 'accessor'
-    : 'method';
+  const literal = typeNode.asKind(SyntaxKind.TypeLiteral);
+  if (!literal) {
+    // `() => T` is a method; `string` / `HTMLElement` is a plain data property.
+    return typeNode.asKind(SyntaxKind.FunctionType) ? 'method' : 'property';
+  }
+
+  const signatures = literal.getMembers()
+    .map(member => member.asKind(SyntaxKind.CallSignature))
+    .filter(signature => signature !== undefined);
+
+  const reader = signatures.some(signature => signature.getParameters().length === 0);
+  const writer = signatures.some((signature) => {
+    const returns = signature.getReturnTypeNode()?.getText() ?? '';
+    return signature.getParameters().length > 0 && (returns === 'void' || returns === 'Promise<void>');
+  });
+
+  return reader && writer ? 'accessor' : 'method';
 }
 
 function readClass(spec: PlayerSpec, groups: Map<string, string>): MethodEntry[] {

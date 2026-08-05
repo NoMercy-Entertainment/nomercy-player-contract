@@ -41,6 +41,18 @@ describe('extractMethods', () => {
     expect(methods.find(m => m.name === 'play' && m.player === 'video')?.kind).toBe('method');
   });
 
+  it('does not mistake an overloaded reader for a stateful noun', () => {
+    // `t(key)` / `t(PluginClass, key)` and `qualityLevels()` /
+    // `qualityLevels(opts)` both read; neither has a writer to port.
+    expect(methods.find(m => m.name === 't' && m.player === 'video')?.kind).toBe('method');
+    expect(methods.find(m => m.name === 'qualityLevels')?.kind).toBe('method');
+  });
+
+  it('marks plain data as a property', () => {
+    expect(methods.find(m => m.name === 'playerId' && m.player === 'video')?.kind).toBe('property');
+    expect(methods.find(m => m.name === 'videoElement')?.kind).toBe('property');
+  });
+
   it('gives every method a group', () => {
     expect(methods.filter(m => !m.group)).toStrictEqual([]);
   });

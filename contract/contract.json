@@ -901,7 +901,7 @@
       "signature": "IPlayer<MusicEventMap>['addClasses']",
       "player": "music",
       "group": "core/dom",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "addPlugin",
@@ -1090,28 +1090,28 @@
       "signature": "HTMLElement",
       "player": "music",
       "group": "music/player",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "createButton",
       "signature": "IPlayer<MusicEventMap>['createButton']",
       "player": "music",
       "group": "core/dom",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "createElement",
       "signature": "IPlayer<MusicEventMap>['createElement']",
       "player": "music",
       "group": "core/dom",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "createSVG",
       "signature": "IPlayer<MusicEventMap>['createSVG']",
       "player": "music",
       "group": "core/dom",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "crossfadeTo",
@@ -1160,7 +1160,7 @@
       "signature": "PlayerExperimental",
       "player": "music",
       "group": "core/experimental",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "forward",
@@ -1300,7 +1300,7 @@
       "signature": "MusicPlayerConfig<T>",
       "player": "music",
       "group": "music/player",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "pause",
@@ -1384,7 +1384,7 @@
       "signature": "string",
       "player": "music",
       "group": "music/player",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "plugins",
@@ -1426,7 +1426,7 @@
       "signature": "{\n\t\t(): QualityLevel[];\n\t\t(opts: { includeUnsupported: true }): QualityLevel[];\n\t}",
       "player": "music",
       "group": "core/media-tracks",
-      "kind": "accessor"
+      "kind": "method"
     },
     {
       "name": "qualityMode",
@@ -1566,7 +1566,7 @@
       "signature": "IPlayer<MusicEventMap>['removeClasses']",
       "player": "music",
       "group": "core/dom",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "removePlugin",
@@ -1720,7 +1720,7 @@
       "signature": "{\n\t\t(key: string, vars?: Record<string, string>): string;\n\t\t(PluginClass: PluginCtorWithId, key: string, vars?: Record<string, string>): string;\n\t}",
       "player": "music",
       "group": "core/i18n",
-      "kind": "accessor"
+      "kind": "method"
     },
     {
       "name": "time",
@@ -1769,7 +1769,7 @@
       "signature": "{\n\t\t(lang: string, key: string): string | undefined;\n\t\t(lang: string, key: string, value: string): void;\n\t}",
       "player": "music",
       "group": "core/i18n",
-      "kind": "accessor"
+      "kind": "method"
     },
     {
       "name": "unmute",
@@ -1846,7 +1846,7 @@
       "signature": "IPlayer<VideoEventMap>['addClasses']",
       "player": "video",
       "group": "core/dom",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "addPlugin",
@@ -2056,28 +2056,28 @@
       "signature": "HTMLElement",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "createButton",
       "signature": "IPlayer<VideoEventMap>['createButton']",
       "player": "video",
       "group": "core/dom",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "createElement",
       "signature": "IPlayer<VideoEventMap>['createElement']",
       "player": "video",
       "group": "core/dom",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "createSVG",
       "signature": "IPlayer<VideoEventMap>['createSVG']",
       "player": "video",
       "group": "core/dom",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "cycleAspectRatio",
@@ -2140,7 +2140,7 @@
       "signature": "PlayerExperimental",
       "player": "video",
       "group": "core/experimental",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "forward",
@@ -2287,7 +2287,7 @@
       "signature": "VideoPlayerConfig<T>",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "pause",
@@ -2385,7 +2385,7 @@
       "signature": "string",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "plugins",
@@ -2427,7 +2427,7 @@
       "signature": "{\n\t\t(): QualityLevel[];\n\t\t(opts: { includeUnsupported: true }): QualityLevel[];\n\t}",
       "player": "video",
       "group": "core/media-tracks",
-      "kind": "accessor"
+      "kind": "method"
     },
     {
       "name": "qualityMode",
@@ -2567,7 +2567,7 @@
       "signature": "IPlayer<VideoEventMap>['removeClasses']",
       "player": "video",
       "group": "core/dom",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "removePlugin",
@@ -2756,7 +2756,7 @@
       "signature": "{\n\t\t(key: string, vars?: Record<string, string>): string;\n\t\t(PluginClass: PluginCtorWithId, key: string, vars?: Record<string, string>): string;\n\t}",
       "player": "video",
       "group": "core/i18n",
-      "kind": "accessor"
+      "kind": "method"
     },
     {
       "name": "theater",
@@ -2833,7 +2833,7 @@
       "signature": "{\n\t\t(lang: string, key: string): string | undefined;\n\t\t(lang: string, key: string, value: string): void;\n\t}",
       "player": "video",
       "group": "core/i18n",
-      "kind": "accessor"
+      "kind": "method"
     },
     {
       "name": "unmute",
@@ -2868,7 +2868,7 @@
       "signature": "HTMLVideoElement | undefined",
       "player": "video",
       "group": "video/player",
-      "kind": "method"
+      "kind": "property"
     },
     {
       "name": "videoRect",
