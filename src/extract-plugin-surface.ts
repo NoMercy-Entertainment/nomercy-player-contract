@@ -31,6 +31,17 @@ export interface SurfaceEntry {
   owner?: string;
   /** Exported from the plugin's entry point, so a consumer can reach it. */
   exported: boolean;
+  /**
+   * A class member's declared visibility. Only `public` is surface a port owes.
+   *
+   * Without this every method of an exported class counted, including the
+   * plugin's own machinery — `private makeBox`, `private rebuildChain`,
+   * `protected createContext` — which is DOM and Web Audio plumbing that can
+   * have no native counterpart by name. Two hundred and eighteen of them were
+   * being reported as an unported surface, and the number said the chrome
+   * plugins were a fifth done when what was missing was mostly the browser.
+   */
+  visibility?: 'public' | 'protected' | 'private';
 }
 
 type PackageName = SurfaceEntry['package'];
@@ -144,6 +155,9 @@ function readClass(node: ClassDeclaration, base: Omit<SurfaceEntry, 'name' | 'ki
       kind: 'method' as const,
       owner,
       exported: node.isExported(),
+      // A `_`-prefixed name is the same statement as `private` in a codebase
+      // that uses both, and the trio uses both.
+      visibility: method.getName().startsWith('_') ? 'private' as const : method.getScope(),
     }));
 }
 
