@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { EventEntry, extractEvents } from './extract-events';
 import { extractErrors } from './extract-errors';
 import { extractMethods, MethodEntry } from './extract-methods';
+import { extractTypes, TypeEntry } from './extract-types';
 import { PACKAGES } from './paths';
 
 export interface Provenance {
@@ -26,6 +27,10 @@ export interface Contract {
   events: EventEntry[];
   methods: MethodEntry[];
   errors: string[];
+  /** Exported interfaces, aliases, classes and enums under types/, adapters/
+   *  and plugins/. The method surface alone reads finished while the types a
+   *  caller programs against are absent. */
+  types: TypeEntry[];
 }
 
 function byKey<T>(key: (item: T) => string): (a: T, b: T) => number {
@@ -77,8 +82,9 @@ export function buildContract(): Contract {
   const events = extractEvents().sort(byKey(e => `${e.map}:${e.name}`));
   const methods = extractMethods().sort(byKey(m => `${m.player}:${m.name}`));
   const errors = extractErrors();
+  const types = extractTypes().sort(byKey(t => `${t.area}:${t.name}`));
 
-  return { version: contractVersion(), provenance: provenance(), events, methods, errors };
+  return { version: contractVersion(), provenance: provenance(), events, methods, errors, types };
 }
 
 const CONTRACT_PATH: string = `${dirname(fileURLToPath(import.meta.url))}/../contract/contract.json`;

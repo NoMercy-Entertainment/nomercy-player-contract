@@ -3950,5 +3950,1225 @@
     "plugin:scrobble/scrobble-failed",
     "video:media/hdr-unplayable",
     "visualization:render/failed"
+  ],
+  "types": [
+    {
+      "name": "AddClasses",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/element-factory/dom.ts"
+    },
+    {
+      "name": "AppendTo",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/element-factory/dom.ts"
+    },
+    {
+      "name": "AuthHeaderProvider",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/media-element/MediaElementBackend.ts"
+    },
+    {
+      "name": "BackendId",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/media-element/helpers.ts"
+    },
+    {
+      "name": "BackendLifecycleBridgeOptions",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/media-element/backend-lifecycle-bridge.ts"
+    },
+    {
+      "name": "BackendLifecycleSource",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/media-element/backend-lifecycle-bridge.ts"
+    },
+    {
+      "name": "BackendLoaderState",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/media-element/backend-state.ts"
+    },
+    {
+      "name": "BackendState",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/media-element/backend-state.ts"
+    },
+    {
+      "name": "CreateElement",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/element-factory/dom.ts"
+    },
+    {
+      "name": "CrossfadeCurve",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/preload/default.ts"
+    },
+    {
+      "name": "CrossfadeTransitionStrategy",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/preload/default.ts"
+    },
+    {
+      "name": "CueParserRegistry",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/cue-parser/registry.ts"
+    },
+    {
+      "name": "DecodeCapability",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/platform/IPlatform.ts"
+    },
+    {
+      "name": "DecodeProfile",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/platform/IPlatform.ts"
+    },
+    {
+      "name": "DefaultPreloadStrategy",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/preload/default.ts"
+    },
+    {
+      "name": "DefaultTranslator",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/translator/translator.ts"
+    },
+    {
+      "name": "DefaultTranslatorOptions",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/translator/ITranslator.ts"
+    },
+    {
+      "name": "DisplayRangeProbe",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/quality/display-range.ts"
+    },
+    {
+      "name": "DomBridgeHandler",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/media-element/helpers.ts"
+    },
+    {
+      "name": "EventEmitter",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/event-bus/default.ts"
+    },
+    {
+      "name": "FisherYatesShuffle",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/shuffle-strategy/default.ts"
+    },
+    {
+      "name": "GaplessTransitionStrategy",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/preload/default.ts"
+    },
+    {
+      "name": "GlobLazyLoader",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/translator/loaders/translations-glob.ts"
+    },
+    {
+      "name": "GlobModule",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/translator/loaders/translations-glob.ts"
+    },
+    {
+      "name": "HdrDecision",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/quality/hdr-policy.ts"
+    },
+    {
+      "name": "HdrOnSdrFallback",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/quality/hdr-policy.ts"
+    },
+    {
+      "name": "HlsHandle",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/media-element/helpers.ts"
+    },
+    {
+      "name": "HlsLoaderConfig",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/media-element/helpers.ts"
+    },
+    {
+      "name": "HlsStreamSource",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/stream/hls.ts"
+    },
+    {
+      "name": "ICapabilitiesProbe",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/platform/IPlatform.ts"
+    },
+    {
+      "name": "IClock",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/clock/IClock.ts"
+    },
+    {
+      "name": "ICueParser",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/cue-parser/ICueParser.ts"
+    },
+    {
+      "name": "ICueParserRegistry",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/cue-parser/ICueParserRegistry.ts"
+    },
+    {
+      "name": "IEventBus",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/event-bus/IEventBus.ts"
+    },
+    {
+      "name": "IFetch",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/fetch/IFetch.ts"
+    },
+    {
+      "name": "IFullscreenController",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/platform/IPlatform.ts"
+    },
+    {
+      "name": "IIdGenerator",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/id-generator/IIdGenerator.ts"
+    },
+    {
+      "name": "ILanguageMatcher",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/language-matcher/ILanguageMatcher.ts"
+    },
+    {
+      "name": "ILifecycleRegistry",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/lifecycle-registry/ILifecycleRegistry.ts"
+    },
+    {
+      "name": "ILogger",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/logger/ILogger.ts"
+    },
+    {
+      "name": "IMediaList",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/media-list/IMediaList.ts"
+    },
+    {
+      "name": "INetworkMonitor",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/platform/IPlatform.ts"
+    },
+    {
+      "name": "IPipController",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/platform/IPlatform.ts"
+    },
+    {
+      "name": "IPlatform",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/platform/IPlatform.ts"
+    },
+    {
+      "name": "IPreloadStrategy",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/preload/default.ts"
+    },
+    {
+      "name": "IRealtimeChannel",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/realtime/IRealtimeChannel.ts"
+    },
+    {
+      "name": "IRetryPolicy",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/retry-policy/IRetryPolicy.ts"
+    },
+    {
+      "name": "IShuffleStrategy",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/shuffle-strategy/IShuffleStrategy.ts"
+    },
+    {
+      "name": "IStorage",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/storage/IStorage.ts"
+    },
+    {
+      "name": "IStreamFactory",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamSource.ts"
+    },
+    {
+      "name": "IStreamRegistry",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamRegistry.ts"
+    },
+    {
+      "name": "IStreamSource",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamSource.ts"
+    },
+    {
+      "name": "ISubtitleRenderer",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/subtitle-renderer/ISubtitleRenderer.ts"
+    },
+    {
+      "name": "ITransitionBackend",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/preload/default.ts"
+    },
+    {
+      "name": "ITransitionStrategy",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/preload/default.ts"
+    },
+    {
+      "name": "ITranslator",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/translator/ITranslator.ts"
+    },
+    {
+      "name": "IUrlResolver",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/url-resolver/IUrlResolver.ts"
+    },
+    {
+      "name": "IVisibilityMonitor",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/platform/IPlatform.ts"
+    },
+    {
+      "name": "IWakeLock",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/platform/IPlatform.ts"
+    },
+    {
+      "name": "IndexedDBBackend",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/storage/indexed-db.ts"
+    },
+    {
+      "name": "LazyTranslationLoader",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/translator/loaders/translations-glob.ts"
+    },
+    {
+      "name": "LifecycleRegistry",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/lifecycle-registry/default.ts"
+    },
+    {
+      "name": "LocalStorageBackend",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/storage/local-storage.ts"
+    },
+    {
+      "name": "LogLevel",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/logger/ILogger.ts"
+    },
+    {
+      "name": "LogSink",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/logger/ILogger.ts"
+    },
+    {
+      "name": "Logger",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/logger/default.ts"
+    },
+    {
+      "name": "LoggerOptions",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/logger/ILogger.ts"
+    },
+    {
+      "name": "LrcPayload",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/cue-parser/lrc.ts"
+    },
+    {
+      "name": "LrcWordCue",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/cue-parser/lrc.ts"
+    },
+    {
+      "name": "MediaElementBackend",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/media-element/MediaElementBackend.ts"
+    },
+    {
+      "name": "MediaList",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/media-list/default.ts"
+    },
+    {
+      "name": "MediaListEvent",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/media-list/IMediaList.ts"
+    },
+    {
+      "name": "MemoryStorageBackend",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/storage/memory.ts"
+    },
+    {
+      "name": "MinimalBackendEventPayload",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/media-element/MediaElementBackend.ts"
+    },
+    {
+      "name": "NetworkTranslationLoader",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/translator/loaders/translation-loader.ts"
+    },
+    {
+      "name": "NetworkTranslationLoaderOptions",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/translator/loaders/translation-loader.ts"
+    },
+    {
+      "name": "NetworkType",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/platform/IPlatform.ts"
+    },
+    {
+      "name": "PreloadAsset",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/preload/default.ts"
+    },
+    {
+      "name": "PreloadContext",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/preload/default.ts"
+    },
+    {
+      "name": "RealtimeFactory",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/realtime/IRealtimeChannel.ts"
+    },
+    {
+      "name": "RealtimeFactoryOptions",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/realtime/IRealtimeChannel.ts"
+    },
+    {
+      "name": "ResolvedUrl",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/url-resolver/IUrlResolver.ts"
+    },
+    {
+      "name": "RetryConfig",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/retry-policy/IRetryPolicy.ts"
+    },
+    {
+      "name": "StreamCapabilities",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamSource.ts"
+    },
+    {
+      "name": "StreamEncryptedPayload",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamSource.ts"
+    },
+    {
+      "name": "StreamErrorPayload",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamSource.ts"
+    },
+    {
+      "name": "StreamEvent",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamSource.ts"
+    },
+    {
+      "name": "StreamEventPayloadMap",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamSource.ts"
+    },
+    {
+      "name": "StreamFactoryOptions",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamSource.ts"
+    },
+    {
+      "name": "StreamInterceptor",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamSource.ts"
+    },
+    {
+      "name": "StreamLevel",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamSource.ts"
+    },
+    {
+      "name": "StreamLevelConsideredPayload",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamSource.ts"
+    },
+    {
+      "name": "StreamRegistry",
+      "kind": "class",
+      "area": "adapters",
+      "file": "adapters/stream/registry.ts"
+    },
+    {
+      "name": "StreamSourceState",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/stream/IStreamSource.ts"
+    },
+    {
+      "name": "TransitionContext",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/preload/default.ts"
+    },
+    {
+      "name": "UrlCategory",
+      "kind": "type",
+      "area": "adapters",
+      "file": "adapters/url-resolver/IUrlResolver.ts"
+    },
+    {
+      "name": "UrlResolverContext",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/url-resolver/IUrlResolver.ts"
+    },
+    {
+      "name": "VTTSpritePayload",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/cue-parser/vtt.ts"
+    },
+    {
+      "name": "VTTSubtitlePayload",
+      "kind": "interface",
+      "area": "adapters",
+      "file": "adapters/cue-parser/vtt.ts"
+    },
+    {
+      "name": "AudioGraphEvents",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/audio-graph/index.ts"
+    },
+    {
+      "name": "AudioGraphOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/audio-graph/index.ts"
+    },
+    {
+      "name": "AudioGraphPlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/audio-graph/index.ts"
+    },
+    {
+      "name": "CanvasEvents",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/canvas/index.ts"
+    },
+    {
+      "name": "CanvasOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/canvas/index.ts"
+    },
+    {
+      "name": "CanvasPlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/canvas/index.ts"
+    },
+    {
+      "name": "CanvasRenderFn",
+      "kind": "type",
+      "area": "plugins",
+      "file": "plugins/canvas/index.ts"
+    },
+    {
+      "name": "CastMediaInfo",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/cast-sender/index.ts"
+    },
+    {
+      "name": "CastMediaMetadata",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/cast-sender/index.ts"
+    },
+    {
+      "name": "CastSenderEvents",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/cast-sender/index.ts"
+    },
+    {
+      "name": "CastSenderOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/cast-sender/index.ts"
+    },
+    {
+      "name": "CastSenderPlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/cast-sender/index.ts"
+    },
+    {
+      "name": "CastSenderTranslationKey",
+      "kind": "type",
+      "area": "plugins",
+      "file": "plugins/cast-sender/i18n/en.ts"
+    },
+    {
+      "name": "ChromeCastMediaCtors",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/cast-sender/index.ts"
+    },
+    {
+      "name": "EmbedCommand",
+      "kind": "type",
+      "area": "plugins",
+      "file": "plugins/embed/index.ts"
+    },
+    {
+      "name": "EmbedEventMessage",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/embed/index.ts"
+    },
+    {
+      "name": "EmbedForwardedEvent",
+      "kind": "type",
+      "area": "plugins",
+      "file": "plugins/embed/index.ts"
+    },
+    {
+      "name": "EmbedOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/embed/index.ts"
+    },
+    {
+      "name": "EmbedPlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/embed/index.ts"
+    },
+    {
+      "name": "EmbedSerializedError",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/embed/index.ts"
+    },
+    {
+      "name": "EqBand",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/equalizer/presets.ts"
+    },
+    {
+      "name": "EqBandFrequency",
+      "kind": "type",
+      "area": "plugins",
+      "file": "plugins/equalizer/presets.ts"
+    },
+    {
+      "name": "EqPreset",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/equalizer/presets.ts"
+    },
+    {
+      "name": "EqSliderValues",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/equalizer/presets.ts"
+    },
+    {
+      "name": "EqualizerEvents",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/equalizer/index.ts"
+    },
+    {
+      "name": "EqualizerOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/equalizer/index.ts"
+    },
+    {
+      "name": "EqualizerPlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/equalizer/index.ts"
+    },
+    {
+      "name": "KeyBindings",
+      "kind": "type",
+      "area": "plugins",
+      "file": "plugins/key-handler/index.ts"
+    },
+    {
+      "name": "KeyHandlerOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/key-handler/index.ts"
+    },
+    {
+      "name": "KeyHandlerPlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/key-handler/index.ts"
+    },
+    {
+      "name": "MediaSessionMetadata",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/media-session/index.ts"
+    },
+    {
+      "name": "MediaSessionOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/media-session/index.ts"
+    },
+    {
+      "name": "MediaSessionPlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/media-session/index.ts"
+    },
+    {
+      "name": "MessageInput",
+      "kind": "type",
+      "area": "plugins",
+      "file": "plugins/message/index.ts"
+    },
+    {
+      "name": "MessageOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/message/index.ts"
+    },
+    {
+      "name": "MessagePlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/message/index.ts"
+    },
+    {
+      "name": "MixerEvents",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/mixer/index.ts"
+    },
+    {
+      "name": "MixerOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/mixer/index.ts"
+    },
+    {
+      "name": "MixerPlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/mixer/index.ts"
+    },
+    {
+      "name": "SliderRange",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/equalizer/presets.ts"
+    },
+    {
+      "name": "SpectrumEvents",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/spectrum/index.ts"
+    },
+    {
+      "name": "SpectrumOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/spectrum/index.ts"
+    },
+    {
+      "name": "SpectrumPlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/spectrum/index.ts"
+    },
+    {
+      "name": "TabLeaderEvents",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/tab-leader/index.ts"
+    },
+    {
+      "name": "TabLeaderOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/tab-leader/index.ts"
+    },
+    {
+      "name": "TabLeaderPlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/tab-leader/index.ts"
+    },
+    {
+      "name": "VisualizationEvents",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/visualization/index.ts"
+    },
+    {
+      "name": "VisualizationFrame",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/visualization/index.ts"
+    },
+    {
+      "name": "VisualizationOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/visualization/index.ts"
+    },
+    {
+      "name": "VisualizationPlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/visualization/index.ts"
+    },
+    {
+      "name": "WaveformVisualization",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/visualization/index.ts"
+    },
+    {
+      "name": "ActionOptions",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/player.ts"
+    },
+    {
+      "name": "ActionSource",
+      "kind": "type",
+      "area": "types",
+      "file": "types/player.ts"
+    },
+    {
+      "name": "AriaLiveLevel",
+      "kind": "type",
+      "area": "types",
+      "file": "types/playback.ts"
+    },
+    {
+      "name": "AudioTrack",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/tracks.ts"
+    },
+    {
+      "name": "AudioTrackState",
+      "kind": "enum",
+      "area": "types",
+      "file": "types/state.ts"
+    },
+    {
+      "name": "AuthConfig",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/config.ts"
+    },
+    {
+      "name": "AuthHeaderValue",
+      "kind": "type",
+      "area": "types",
+      "file": "types/config.ts"
+    },
+    {
+      "name": "BaseEventMap",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/events.ts"
+    },
+    {
+      "name": "BasePlayerConfig",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/config.ts"
+    },
+    {
+      "name": "BasePlaylistItem",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/playlist.ts"
+    },
+    {
+      "name": "BeforeEvent",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/events.ts"
+    },
+    {
+      "name": "BufferState",
+      "kind": "enum",
+      "area": "types",
+      "file": "types/state.ts"
+    },
+    {
+      "name": "CanPlayResult",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/tracks.ts"
+    },
+    {
+      "name": "CastConfig",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/config.ts"
+    },
+    {
+      "name": "CastState",
+      "kind": "enum",
+      "area": "types",
+      "file": "types/state.ts"
+    },
+    {
+      "name": "CastTarget",
+      "kind": "type",
+      "area": "types",
+      "file": "types/config.ts"
+    },
+    {
+      "name": "Chapter",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/chapter.ts"
+    },
+    {
+      "name": "CueEventPayload",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/cues.ts"
+    },
+    {
+      "name": "CurrentAudioTrackSelection",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/tracks.ts"
+    },
+    {
+      "name": "CurrentQualitySelection",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/tracks.ts"
+    },
+    {
+      "name": "CurrentSubtitleSelection",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/tracks.ts"
+    },
+    {
+      "name": "DeviceCapabilities",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/device.ts"
+    },
+    {
+      "name": "DrmConfig",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/config.ts"
+    },
+    {
+      "name": "IPlayer",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/player.ts"
+    },
+    {
+      "name": "IPlayerBackend",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/player.ts"
+    },
+    {
+      "name": "LoadOptions",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/player.ts"
+    },
+    {
+      "name": "NetworkState",
+      "kind": "enum",
+      "area": "types",
+      "file": "types/state.ts"
+    },
+    {
+      "name": "PlayState",
+      "kind": "enum",
+      "area": "types",
+      "file": "types/state.ts"
+    },
+    {
+      "name": "PlaybackMetrics",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/metrics.ts"
+    },
+    {
+      "name": "PlayerConstructorId",
+      "kind": "type",
+      "area": "types",
+      "file": "types/player.ts"
+    },
+    {
+      "name": "PlayerExperimental",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/experimental.ts"
+    },
+    {
+      "name": "PlayerPhase",
+      "kind": "type",
+      "area": "types",
+      "file": "types/player.ts"
+    },
+    {
+      "name": "PluginAdvisory",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/plugin.ts"
+    },
+    {
+      "name": "PluginCtorWithId",
+      "kind": "type",
+      "area": "types",
+      "file": "types/plugin.ts"
+    },
+    {
+      "name": "PluginSpec",
+      "kind": "type",
+      "area": "types",
+      "file": "types/plugin.ts"
+    },
+    {
+      "name": "PreventedReason",
+      "kind": "type",
+      "area": "types",
+      "file": "types/player.ts"
+    },
+    {
+      "name": "QualityLevel",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/tracks.ts"
+    },
+    {
+      "name": "QualityState",
+      "kind": "enum",
+      "area": "types",
+      "file": "types/state.ts"
+    },
+    {
+      "name": "RepeatState",
+      "kind": "enum",
+      "area": "types",
+      "file": "types/state.ts"
+    },
+    {
+      "name": "RequireSpec",
+      "kind": "type",
+      "area": "types",
+      "file": "types/plugin.ts"
+    },
+    {
+      "name": "SetupState",
+      "kind": "enum",
+      "area": "types",
+      "file": "types/state.ts"
+    },
+    {
+      "name": "ShuffleState",
+      "kind": "enum",
+      "area": "types",
+      "file": "types/state.ts"
+    },
+    {
+      "name": "SidecarSubtitleInput",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/tracks.ts"
+    },
+    {
+      "name": "SubtitleCue",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/cues.ts"
+    },
+    {
+      "name": "SubtitleCueChange",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/cues.ts"
+    },
+    {
+      "name": "SubtitleStyle",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/tracks.ts"
+    },
+    {
+      "name": "SubtitleTrack",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/tracks.ts"
+    },
+    {
+      "name": "TimeState",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/playback.ts"
+    },
+    {
+      "name": "TranslationLoader",
+      "kind": "type",
+      "area": "types",
+      "file": "types/translations.ts"
+    },
+    {
+      "name": "Translations",
+      "kind": "type",
+      "area": "types",
+      "file": "types/translations.ts"
+    },
+    {
+      "name": "VisibilityState",
+      "kind": "enum",
+      "area": "types",
+      "file": "types/state.ts"
+    },
+    {
+      "name": "VolumeState",
+      "kind": "enum",
+      "area": "types",
+      "file": "types/state.ts"
+    },
+    {
+      "name": "WithCurrentItem",
+      "kind": "interface",
+      "area": "types",
+      "file": "types/player.ts"
+    }
   ]
 }
