@@ -2,8 +2,8 @@
   "version": "2.0.4",
   "provenance": {
     "version": "2.0.4",
-    "commit": "acfece6",
-    "commitsAheadOfTag": 0,
+    "commit": "a906851",
+    "commitsAheadOfTag": 2,
     "dirty": false
   },
   "events": [
@@ -2656,7 +2656,7 @@
       "name": "cycleAudioTracks",
       "signature": "() => void",
       "player": "video",
-      "group": "video/player",
+      "group": "core/media-tracks",
       "kind": "method",
       "arities": [
         0
@@ -4845,6 +4845,18 @@
       "kind": "class",
       "area": "plugins",
       "file": "plugins/visualization/index.ts"
+    },
+    {
+      "name": "VolumeMemoryOptions",
+      "kind": "interface",
+      "area": "plugins",
+      "file": "plugins/volume-memory/index.ts"
+    },
+    {
+      "name": "VolumeMemoryPlugin",
+      "kind": "class",
+      "area": "plugins",
+      "file": "plugins/volume-memory/index.ts"
     },
     {
       "name": "WaveformVisualization",

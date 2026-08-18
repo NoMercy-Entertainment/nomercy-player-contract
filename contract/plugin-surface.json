@@ -6930,6 +6930,15 @@
     "package": "core",
     "file": "core/mixins/media-tracks.ts",
     "exported": false,
+    "name": "cycleAudioTracks",
+    "kind": "method",
+    "owner": "literal"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "core/mixins/media-tracks.ts",
+    "exported": false,
     "name": "nextChapter",
     "kind": "method",
     "owner": "literal"
@@ -11139,6 +11148,71 @@
     "name": "tick",
     "kind": "option",
     "owner": "VisualizationOptions"
+  },
+  {
+    "plugin": "core/volume-memory",
+    "package": "core",
+    "file": "index.ts",
+    "exported": false,
+    "name": "DEFAULT_PERSIST_KEY",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/volume-memory",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "volumeMemoryPlugin",
+    "kind": "const"
+  },
+  {
+    "plugin": "core/volume-memory",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "_loadPersisted",
+    "kind": "method",
+    "owner": "VolumeMemoryPlugin",
+    "visibility": "private"
+  },
+  {
+    "plugin": "core/volume-memory",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "_save",
+    "kind": "method",
+    "owner": "VolumeMemoryPlugin",
+    "visibility": "private"
+  },
+  {
+    "plugin": "core/volume-memory",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "dispose",
+    "kind": "method",
+    "owner": "VolumeMemoryPlugin",
+    "visibility": "public"
+  },
+  {
+    "plugin": "core/volume-memory",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "use",
+    "kind": "method",
+    "owner": "VolumeMemoryPlugin",
+    "visibility": "public"
+  },
+  {
+    "plugin": "core/volume-memory",
+    "package": "core",
+    "file": "index.ts",
+    "exported": true,
+    "name": "persistKey",
+    "kind": "option",
+    "owner": "VolumeMemoryOptions"
   },
   {
     "plugin": "music/auto-advance",
@@ -15753,6 +15827,16 @@
     "package": "video",
     "file": "adapters/video-backend/html5.ts",
     "exported": true,
+    "name": "_rideOutNetworkError",
+    "kind": "method",
+    "owner": "Html5VideoBackend",
+    "visibility": "private"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "adapters/video-backend/html5.ts",
+    "exported": true,
     "name": "_schedulePaneReapply",
     "kind": "method",
     "owner": "Html5VideoBackend",
@@ -15784,6 +15868,16 @@
     "file": "adapters/video-backend/html5.ts",
     "exported": true,
     "name": "_teardownPaneResizeObserver",
+    "kind": "method",
+    "owner": "Html5VideoBackend",
+    "visibility": "private"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "adapters/video-backend/html5.ts",
+    "exported": true,
+    "name": "_watchForConnectivityReturn",
     "kind": "method",
     "owner": "Html5VideoBackend",
     "visibility": "private"
@@ -16071,6 +16165,46 @@
   {
     "plugin": "video/src",
     "package": "video",
+    "file": "adapters/video-backend/source-outage.ts",
+    "exported": true,
+    "name": "HTTP_STATUS_RETRY_LIMIT",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "adapters/video-backend/source-outage.ts",
+    "exported": true,
+    "name": "SOURCE_OUTAGE_BACKOFF_MS",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "adapters/video-backend/source-outage.ts",
+    "exported": true,
+    "name": "isOriginDownStatus",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "adapters/video-backend/source-outage.ts",
+    "exported": true,
+    "name": "sourceOutageBudgetMs",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "adapters/video-backend/source-outage.ts",
+    "exported": true,
+    "name": "sourceOutageRetryLimit",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
     "file": "index.ts",
     "exported": false,
     "name": "_instances",
@@ -16248,16 +16382,6 @@
     "file": "index.ts",
     "exported": true,
     "name": "cycleAspectRatio",
-    "kind": "method",
-    "owner": "NMVideoPlayer",
-    "visibility": "public"
-  },
-  {
-    "plugin": "video/src",
-    "package": "video",
-    "file": "index.ts",
-    "exported": true,
-    "name": "cycleAudioTracks",
     "kind": "method",
     "owner": "NMVideoPlayer",
     "visibility": "public"
