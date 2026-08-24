@@ -8,7 +8,7 @@ concurrency:
 
 jobs:
   contract:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, X64, beast-unit]
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
