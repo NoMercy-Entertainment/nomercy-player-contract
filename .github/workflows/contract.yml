@@ -36,6 +36,20 @@ jobs:
           path: packages/nomercy-music-player
           fetch-depth: 0
 
+      # The Swift facade extractor reads the shipped facades out of the native
+      # repos. Same reasoning as the three above: public, and the subject of the
+      # run rather than someone's private layout.
+      - uses: actions/checkout@v6
+        with:
+          repository: NoMercy-Entertainment/nomercy-video-player-kmp
+          path: packages-native/nomercy-video-player-kmp
+          fetch-depth: 0
+      - uses: actions/checkout@v6
+        with:
+          repository: NoMercy-Entertainment/nomercy-music-player-kmp
+          path: packages-native/nomercy-music-player-kmp
+          fetch-depth: 0
+
       - uses: actions/setup-node@v6
         with:
           node-version: 22
