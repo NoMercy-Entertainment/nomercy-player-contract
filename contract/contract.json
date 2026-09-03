@@ -1,10 +1,10 @@
 {
-  "version": "2.0.4",
+  "version": "2.1.0",
   "provenance": {
-    "version": "2.0.4",
-    "commit": "a906851",
-    "commitsAheadOfTag": 2,
-    "dirty": false
+    "version": "2.1.0",
+    "commit": "8efd364",
+    "commitsAheadOfTag": 5,
+    "dirty": true
   },
   "events": [
     {
@@ -901,14 +901,6 @@
       ]
     },
     {
-      "name": "addClasses",
-      "signature": "IPlayer<MusicEventMap>['addClasses']",
-      "player": "music",
-      "group": "core/dom",
-      "kind": "property",
-      "arities": []
-    },
-    {
       "name": "addPlugin",
       "signature": "<P extends Plugin<any, any, any>>(PluginClass: PluginCtorWithId & (new () => P), opts?: P['opts']) => this",
       "player": "music",
@@ -1184,30 +1176,6 @@
       "signature": "HTMLElement",
       "player": "music",
       "group": "music/player",
-      "kind": "property",
-      "arities": []
-    },
-    {
-      "name": "createButton",
-      "signature": "IPlayer<MusicEventMap>['createButton']",
-      "player": "music",
-      "group": "core/dom",
-      "kind": "property",
-      "arities": []
-    },
-    {
-      "name": "createElement",
-      "signature": "IPlayer<MusicEventMap>['createElement']",
-      "player": "music",
-      "group": "core/dom",
-      "kind": "property",
-      "arities": []
-    },
-    {
-      "name": "createSVG",
-      "signature": "IPlayer<MusicEventMap>['createSVG']",
-      "player": "music",
-      "group": "core/dom",
       "kind": "property",
       "arities": []
     },
@@ -1880,14 +1848,6 @@
       ]
     },
     {
-      "name": "removeClasses",
-      "signature": "IPlayer<MusicEventMap>['removeClasses']",
-      "player": "music",
-      "group": "core/dom",
-      "kind": "property",
-      "arities": []
-    },
-    {
       "name": "removePlugin",
       "signature": "<P extends Plugin<any, any, any>>(PluginClass: PluginCtorWithId & (new () => P)) => void",
       "player": "music",
@@ -2290,7 +2250,7 @@
     },
     {
       "name": "activityTracking",
-      "signature": "{\n\t\t(): boolean;\n\t\t(enabled: boolean): void;\n\t}",
+      "signature": "{\r\n\t\t(): boolean;\r\n\t\t(enabled: boolean): void;\r\n\t}",
       "player": "video",
       "group": "core/activity",
       "kind": "accessor",
@@ -2298,14 +2258,6 @@
         0,
         1
       ]
-    },
-    {
-      "name": "addClasses",
-      "signature": "IPlayer<VideoEventMap>['addClasses']",
-      "player": "video",
-      "group": "core/dom",
-      "kind": "property",
-      "arities": []
     },
     {
       "name": "addPlugin",
@@ -2373,7 +2325,7 @@
     },
     {
       "name": "audioOutput",
-      "signature": "{\n\t\t(): Promise<string | null>;\n\t\t(deviceId: string): Promise<void>;\n\t}",
+      "signature": "{\r\n\t\t(): Promise<string | null>;\r\n\t\t(deviceId: string): Promise<void>;\r\n\t}",
       "player": "video",
       "group": "core/audio-output",
       "kind": "accessor",
@@ -2394,7 +2346,7 @@
     },
     {
       "name": "audioTrack",
-      "signature": "{\n\t\t(): CurrentAudioTrackSelection | null;\n\t\t(idx: number): Promise<void>;\n\t}",
+      "signature": "{\r\n\t\t(): CurrentAudioTrackSelection | null;\r\n\t\t(idx: number): Promise<void>;\r\n\t}",
       "player": "video",
       "group": "core/media-tracks",
       "kind": "accessor",
@@ -2405,7 +2357,7 @@
     },
     {
       "name": "audioTrackMode",
-      "signature": "{\n\t\t(): AudioTrackState;\n\t\t(idx: number): void;\n\t}",
+      "signature": "{\r\n\t\t(): AudioTrackState;\r\n\t\t(idx: number): void;\r\n\t}",
       "player": "video",
       "group": "core/player-state",
       "kind": "accessor",
@@ -2426,7 +2378,7 @@
     },
     {
       "name": "auth",
-      "signature": "{\n\t\t(): Readonly<AuthConfig> | undefined;\n\t\t(config: AuthConfig): void;\n\t\t(partial: Partial<AuthConfig>): void;\n\t\t(clear: null): void;\n\t}",
+      "signature": "{\r\n\t\t(): Readonly<AuthConfig> | undefined;\r\n\t\t(config: AuthConfig): void;\r\n\t\t(partial: Partial<AuthConfig>): void;\r\n\t\t(clear: null): void;\r\n\t}",
       "player": "video",
       "group": "core/auth",
       "kind": "accessor",
@@ -2448,7 +2400,7 @@
     },
     {
       "name": "backlog",
-      "signature": "{\n\t\t(): ReadonlyArray<T>;\n\t\t(items: T[]): void;\n\t}",
+      "signature": "{\r\n\t\t(): ReadonlyArray<T>;\r\n\t\t(items: T[]): void;\r\n\t}",
       "player": "video",
       "group": "core/queue",
       "kind": "accessor",
@@ -2499,7 +2451,7 @@
     },
     {
       "name": "bandwidthEstimator",
-      "signature": "{\n\t\t(): (() => number) | undefined;\n\t\t(fn: () => number): void;\n\t}",
+      "signature": "{\r\n\t\t(): (() => number) | undefined;\r\n\t\t(fn: () => number): void;\r\n\t}",
       "player": "video",
       "group": "core/abr",
       "kind": "accessor",
@@ -2510,7 +2462,7 @@
     },
     {
       "name": "baseUrl",
-      "signature": "{\n\t\t(): string | undefined;\n\t\t(url: string): void;\n\t}",
+      "signature": "{\r\n\t\t(): string | undefined;\r\n\t\t(url: string): void;\r\n\t}",
       "player": "video",
       "group": "core/base-url-audio-context",
       "kind": "accessor",
@@ -2581,7 +2533,7 @@
     },
     {
       "name": "chapter",
-      "signature": "{\n\t\t(): Chapter | null;\n\t\t(idx: number): void;\n\t}",
+      "signature": "{\r\n\t\t(): Chapter | null;\r\n\t\t(idx: number): void;\r\n\t}",
       "player": "video",
       "group": "core/media-tracks",
       "kind": "accessor",
@@ -2615,30 +2567,6 @@
       "signature": "HTMLElement",
       "player": "video",
       "group": "video/player",
-      "kind": "property",
-      "arities": []
-    },
-    {
-      "name": "createButton",
-      "signature": "IPlayer<VideoEventMap>['createButton']",
-      "player": "video",
-      "group": "core/dom",
-      "kind": "property",
-      "arities": []
-    },
-    {
-      "name": "createElement",
-      "signature": "IPlayer<VideoEventMap>['createElement']",
-      "player": "video",
-      "group": "core/dom",
-      "kind": "property",
-      "arities": []
-    },
-    {
-      "name": "createSVG",
-      "signature": "IPlayer<VideoEventMap>['createSVG']",
-      "player": "video",
-      "group": "core/dom",
       "kind": "property",
       "arities": []
     },
@@ -2825,7 +2753,7 @@
     },
     {
       "name": "item",
-      "signature": "{\n\t\t(): T | undefined;\n\t\t(target: T | string | number, opts?: LoadOptions): void;\n\t}",
+      "signature": "{\r\n\t\t(): T | undefined;\r\n\t\t(target: T | string | number, opts?: LoadOptions): void;\r\n\t}",
       "player": "video",
       "group": "core/queue",
       "kind": "accessor",
@@ -2837,7 +2765,7 @@
     },
     {
       "name": "language",
-      "signature": "{\n\t\t(): string;\n\t\t(lang: string): Promise<void>;\n\t}",
+      "signature": "{\r\n\t\t(): string;\r\n\t\t(lang: string): Promise<void>;\r\n\t}",
       "player": "video",
       "group": "core/i18n",
       "kind": "accessor",
@@ -3023,7 +2951,7 @@
     },
     {
       "name": "playItem",
-      "signature": "(\n\t\ttarget: BasePlaylistItem | string | number | ((item: BasePlaylistItem) => boolean),\n\t\topts?: LoadOptions,\n\t) => void",
+      "signature": "(\r\n\t\ttarget: BasePlaylistItem | string | number | ((item: BasePlaylistItem) => boolean),\r\n\t\topts?: LoadOptions,\r\n\t) => void",
       "player": "video",
       "group": "core/play-queue",
       "kind": "method",
@@ -3034,7 +2962,7 @@
     },
     {
       "name": "playNow",
-      "signature": "(\n\t\titems: BasePlaylistItem[],\n\t\tstart?: BasePlaylistItem | string | number | ((item: BasePlaylistItem) => boolean),\n\t\topts?: LoadOptions,\n\t) => void",
+      "signature": "(\r\n\t\titems: BasePlaylistItem[],\r\n\t\tstart?: BasePlaylistItem | string | number | ((item: BasePlaylistItem) => boolean),\r\n\t\topts?: LoadOptions,\r\n\t) => void",
       "player": "video",
       "group": "core/play-queue",
       "kind": "method",
@@ -3066,7 +2994,7 @@
     },
     {
       "name": "playbackRate",
-      "signature": "{\n\t\t(): number;\n\t\t(rate: number): Promise<void>;\n\t}",
+      "signature": "{\r\n\t\t(): number;\r\n\t\t(rate: number): Promise<void>;\r\n\t}",
       "player": "video",
       "group": "core/time",
       "kind": "accessor",
@@ -3137,7 +3065,7 @@
     },
     {
       "name": "quality",
-      "signature": "{\n\t\t(): CurrentQualitySelection | 'auto';\n\t\t(idx: number | 'auto'): void;\n\t}",
+      "signature": "{\r\n\t\t(): CurrentQualitySelection | 'auto';\r\n\t\t(idx: number | 'auto'): void;\r\n\t}",
       "player": "video",
       "group": "core/media-tracks",
       "kind": "accessor",
@@ -3148,7 +3076,7 @@
     },
     {
       "name": "qualityLevels",
-      "signature": "{\n\t\t(): QualityLevel[];\n\t\t(opts: { includeUnsupported: true }): QualityLevel[];\n\t}",
+      "signature": "{\r\n\t\t(): QualityLevel[];\r\n\t\t(opts: { includeUnsupported: true }): QualityLevel[];\r\n\t}",
       "player": "video",
       "group": "core/media-tracks",
       "kind": "method",
@@ -3159,7 +3087,7 @@
     },
     {
       "name": "qualityMode",
-      "signature": "{\n\t\t(): QualityState;\n\t\t(target: number | 'auto'): void;\n\t}",
+      "signature": "{\r\n\t\t(): QualityState;\r\n\t\t(target: number | 'auto'): void;\r\n\t}",
       "player": "video",
       "group": "core/player-state",
       "kind": "accessor",
@@ -3170,7 +3098,7 @@
     },
     {
       "name": "queue",
-      "signature": "{\n\t\t(): ReadonlyArray<T>;\n\t\t(items: T[], opts?: ActionOptions): void;\n\t}",
+      "signature": "{\r\n\t\t(): ReadonlyArray<T>;\r\n\t\t(items: T[], opts?: ActionOptions): void;\r\n\t}",
       "player": "video",
       "group": "core/queue",
       "kind": "accessor",
@@ -3362,14 +3290,6 @@
       ]
     },
     {
-      "name": "removeClasses",
-      "signature": "IPlayer<VideoEventMap>['removeClasses']",
-      "player": "video",
-      "group": "core/dom",
-      "kind": "property",
-      "arities": []
-    },
-    {
       "name": "removePlugin",
       "signature": "<P extends Plugin<any, any, any>>(PluginClass: PluginCtorWithId & (new () => P)) => void",
       "player": "video",
@@ -3413,7 +3333,7 @@
     },
     {
       "name": "repeatState",
-      "signature": "{\n\t\t(): RepeatState;\n\t\t(state: RepeatState): Promise<void>;\n\t}",
+      "signature": "{\r\n\t\t(): RepeatState;\r\n\t\t(state: RepeatState): Promise<void>;\r\n\t}",
       "player": "video",
       "group": "core/state-mutators",
       "kind": "accessor",
@@ -3561,7 +3481,7 @@
     },
     {
       "name": "shuffleState",
-      "signature": "{\n\t\t(): ShuffleState;\n\t\t(state: ShuffleState | boolean): Promise<void>;\n\t}",
+      "signature": "{\r\n\t\t(): ShuffleState;\r\n\t\t(state: ShuffleState | boolean): Promise<void>;\r\n\t}",
       "player": "video",
       "group": "core/state-mutators",
       "kind": "accessor",
@@ -3603,7 +3523,7 @@
     },
     {
       "name": "subtitle",
-      "signature": "{\n\t\t(): CurrentSubtitleSelection | null;\n\t\t(idx: number | null): Promise<void>;\n\t}",
+      "signature": "{\r\n\t\t(): CurrentSubtitleSelection | null;\r\n\t\t(idx: number | null): Promise<void>;\r\n\t}",
       "player": "video",
       "group": "core/media-tracks",
       "kind": "accessor",
@@ -3624,7 +3544,7 @@
     },
     {
       "name": "subtitleStyle",
-      "signature": "{\n\t\t(): SubtitleStyle;\n\t\t(patch: Partial<SubtitleStyle>): void;\n\t}",
+      "signature": "{\r\n\t\t(): SubtitleStyle;\r\n\t\t(patch: Partial<SubtitleStyle>): void;\r\n\t}",
       "player": "video",
       "group": "core/media-tracks",
       "kind": "accessor",
@@ -3645,7 +3565,7 @@
     },
     {
       "name": "t",
-      "signature": "{\n\t\t(key: string, vars?: Record<string, string>): string;\n\t\t(PluginClass: PluginCtorWithId, key: string, vars?: Record<string, string>): string;\n\t}",
+      "signature": "{\r\n\t\t(key: string, vars?: Record<string, string>): string;\r\n\t\t(PluginClass: PluginCtorWithId, key: string, vars?: Record<string, string>): string;\r\n\t}",
       "player": "video",
       "group": "core/i18n",
       "kind": "method",
@@ -3668,7 +3588,7 @@
     },
     {
       "name": "time",
-      "signature": "{\n\t\t(): number;\n\t\t(seconds: number, opts?: ActionOptions): Promise<void>;\n\t}",
+      "signature": "{\r\n\t\t(): number;\r\n\t\t(seconds: number, opts?: ActionOptions): Promise<void>;\r\n\t}",
       "player": "video",
       "group": "core/time",
       "kind": "accessor",
@@ -3761,7 +3681,7 @@
     },
     {
       "name": "translation",
-      "signature": "{\n\t\t(lang: string, key: string): string | undefined;\n\t\t(lang: string, key: string, value: string): void;\n\t}",
+      "signature": "{\r\n\t\t(lang: string, key: string): string | undefined;\r\n\t\t(lang: string, key: string, value: string): void;\r\n\t}",
       "player": "video",
       "group": "core/i18n",
       "kind": "method",
@@ -3802,7 +3722,7 @@
     },
     {
       "name": "urlResolver",
-      "signature": "{\n\t\t(): IUrlResolver | undefined;\n\t\t(resolver: IUrlResolver | undefined): void;\n\t}",
+      "signature": "{\r\n\t\t(): IUrlResolver | undefined;\r\n\t\t(resolver: IUrlResolver | undefined): void;\r\n\t}",
       "player": "video",
       "group": "core/auth",
       "kind": "accessor",
@@ -3841,7 +3761,7 @@
     },
     {
       "name": "volume",
-      "signature": "{\n\t\t(): number;\n\t\t(level: number): Promise<void>;\n\t}",
+      "signature": "{\r\n\t\t(): number;\r\n\t\t(level: number): Promise<void>;\r\n\t}",
       "player": "video",
       "group": "core/volume",
       "kind": "accessor",

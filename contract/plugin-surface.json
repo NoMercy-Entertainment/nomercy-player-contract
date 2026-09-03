@@ -6258,59 +6258,6 @@
   {
     "plugin": "core/src",
     "package": "core",
-    "file": "core/mixins/dom-mixin.ts",
-    "exported": true,
-    "name": "domMethods",
-    "kind": "const"
-  },
-  {
-    "plugin": "core/src",
-    "package": "core",
-    "file": "core/mixins/dom-mixin.ts",
-    "exported": false,
-    "name": "addClasses",
-    "kind": "method",
-    "owner": "literal"
-  },
-  {
-    "plugin": "core/src",
-    "package": "core",
-    "file": "core/mixins/dom-mixin.ts",
-    "exported": false,
-    "name": "createButton",
-    "kind": "method",
-    "owner": "literal"
-  },
-  {
-    "plugin": "core/src",
-    "package": "core",
-    "file": "core/mixins/dom-mixin.ts",
-    "exported": false,
-    "name": "createElement",
-    "kind": "method",
-    "owner": "literal"
-  },
-  {
-    "plugin": "core/src",
-    "package": "core",
-    "file": "core/mixins/dom-mixin.ts",
-    "exported": false,
-    "name": "createSVG",
-    "kind": "method",
-    "owner": "literal"
-  },
-  {
-    "plugin": "core/src",
-    "package": "core",
-    "file": "core/mixins/dom-mixin.ts",
-    "exported": false,
-    "name": "removeClasses",
-    "kind": "method",
-    "owner": "literal"
-  },
-  {
-    "plugin": "core/src",
-    "package": "core",
     "file": "core/mixins/experimental.ts",
     "exported": true,
     "name": "experimentalDescriptor",
@@ -8244,6 +8191,16 @@
     "package": "core",
     "file": "core/plugin/base.ts",
     "exported": true,
+    "name": "addClasses",
+    "kind": "method",
+    "owner": "Plugin",
+    "visibility": "protected"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "core/plugin/base.ts",
+    "exported": true,
     "name": "appendInlineStyles",
     "kind": "method",
     "owner": "Plugin",
@@ -8278,6 +8235,36 @@
     "kind": "method",
     "owner": "Plugin",
     "visibility": "public"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "core/plugin/base.ts",
+    "exported": true,
+    "name": "createButton",
+    "kind": "method",
+    "owner": "Plugin",
+    "visibility": "protected"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "core/plugin/base.ts",
+    "exported": true,
+    "name": "createElement",
+    "kind": "method",
+    "owner": "Plugin",
+    "visibility": "protected"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "core/plugin/base.ts",
+    "exported": true,
+    "name": "createSVG",
+    "kind": "method",
+    "owner": "Plugin",
+    "visibility": "protected"
   },
   {
     "plugin": "core/src",
@@ -8478,6 +8465,16 @@
     "kind": "method",
     "owner": "Plugin",
     "visibility": "public"
+  },
+  {
+    "plugin": "core/src",
+    "package": "core",
+    "file": "core/plugin/base.ts",
+    "exported": true,
+    "name": "removeClasses",
+    "kind": "method",
+    "owner": "Plugin",
+    "visibility": "protected"
   },
   {
     "plugin": "core/src",
@@ -9630,16 +9627,6 @@
     "package": "core",
     "file": "testing/stub-player.ts",
     "exported": true,
-    "name": "addClasses",
-    "kind": "method",
-    "owner": "StubPlayer",
-    "visibility": "public"
-  },
-  {
-    "plugin": "core/src",
-    "package": "core",
-    "file": "testing/stub-player.ts",
-    "exported": true,
     "name": "addPlugin",
     "kind": "method",
     "owner": "StubPlayer",
@@ -9891,36 +9878,6 @@
     "file": "testing/stub-player.ts",
     "exported": true,
     "name": "chapters",
-    "kind": "method",
-    "owner": "StubPlayer",
-    "visibility": "public"
-  },
-  {
-    "plugin": "core/src",
-    "package": "core",
-    "file": "testing/stub-player.ts",
-    "exported": true,
-    "name": "createButton",
-    "kind": "method",
-    "owner": "StubPlayer",
-    "visibility": "public"
-  },
-  {
-    "plugin": "core/src",
-    "package": "core",
-    "file": "testing/stub-player.ts",
-    "exported": true,
-    "name": "createElement",
-    "kind": "method",
-    "owner": "StubPlayer",
-    "visibility": "public"
-  },
-  {
-    "plugin": "core/src",
-    "package": "core",
-    "file": "testing/stub-player.ts",
-    "exported": true,
-    "name": "createSVG",
     "kind": "method",
     "owner": "StubPlayer",
     "visibility": "public"
@@ -10441,16 +10398,6 @@
     "file": "testing/stub-player.ts",
     "exported": true,
     "name": "registerStream",
-    "kind": "method",
-    "owner": "StubPlayer",
-    "visibility": "public"
-  },
-  {
-    "plugin": "core/src",
-    "package": "core",
-    "file": "testing/stub-player.ts",
-    "exported": true,
-    "name": "removeClasses",
     "kind": "method",
     "owner": "StubPlayer",
     "visibility": "public"
@@ -15178,6 +15125,54 @@
   {
     "plugin": "video/octopus",
     "package": "video",
+    "file": "font-names.ts",
+    "exported": false,
+    "name": "NAME_IDS",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "font-names.ts",
+    "exported": false,
+    "name": "TTC_TAG",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "font-names.ts",
+    "exported": false,
+    "name": "collectFromNameTable",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "font-names.ts",
+    "exported": false,
+    "name": "decodeNameRecord",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "font-names.ts",
+    "exported": true,
+    "name": "readFontFamilyNames",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
+    "file": "font-names.ts",
+    "exported": false,
+    "name": "readTableDirectory",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/octopus",
+    "package": "video",
     "file": "index.ts",
     "exported": true,
     "name": "octopusPlugin",
@@ -16593,6 +16588,122 @@
     "exported": true,
     "name": "pickStartItem",
     "kind": "function"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": false,
+    "name": "AUDIO_KEY",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": true,
+    "name": "SUBTITLES_OFF",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": false,
+    "name": "SUBTITLE_KEY",
+    "kind": "const"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": false,
+    "name": "descriptorOf",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": true,
+    "name": "formatOf",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": true,
+    "name": "matchSubtitleTrack",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": false,
+    "name": "parseSubtitleChoice",
+    "kind": "function"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": true,
+    "name": "audioLanguage",
+    "kind": "method",
+    "owner": "TrackLanguageMemory",
+    "visibility": "public"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": true,
+    "name": "read",
+    "kind": "method",
+    "owner": "TrackLanguageMemory",
+    "visibility": "private"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": true,
+    "name": "rememberAudio",
+    "kind": "method",
+    "owner": "TrackLanguageMemory",
+    "visibility": "public"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": true,
+    "name": "rememberSubtitle",
+    "kind": "method",
+    "owner": "TrackLanguageMemory",
+    "visibility": "public"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": true,
+    "name": "subtitleChoice",
+    "kind": "method",
+    "owner": "TrackLanguageMemory",
+    "visibility": "public"
+  },
+  {
+    "plugin": "video/src",
+    "package": "video",
+    "file": "player/track-language-memory.ts",
+    "exported": true,
+    "name": "write",
+    "kind": "method",
+    "owner": "TrackLanguageMemory",
+    "visibility": "private"
   },
   {
     "plugin": "video/src",
