@@ -98,6 +98,13 @@ function signatureArities(typeNode: TypeNode | undefined): number[] {
   return [...counts].sort((a, b) => a - b);
 }
 
+// Signature text comes straight out of the source file, so a CRLF checkout
+// bakes \r\n into the JSON and the contract stops matching one generated on
+// Linux. The contract has to be byte-identical whoever runs the generator.
+function normalizeNewlines(text: string): string {
+  return text.replace(/\r\n/g, '\n');
+}
+
 function readClass(spec: PlayerSpec, groups: Map<string, string>): MethodEntry[] {
   const project: Project = new Project({ tsConfigFilePath: spec.tsconfig, skipAddingFilesFromTsConfig: true });
   const source = project.addSourceFileAtPath(spec.file);
@@ -111,7 +118,7 @@ function readClass(spec: PlayerSpec, groups: Map<string, string>): MethodEntry[]
     if (!isPublic(prop.getName())) continue;
     entries.push({
       name: prop.getName(),
-      signature: prop.getTypeNode()?.getText() ?? 'unknown',
+      signature: normalizeNewlines(prop.getTypeNode()?.getText() ?? 'unknown'),
       player: spec.player,
       group: groups.get(prop.getName()) ?? own,
       kind: kindOf(prop.getTypeNode()),
@@ -125,7 +132,7 @@ function readClass(spec: PlayerSpec, groups: Map<string, string>): MethodEntry[]
     const ret = method.getReturnTypeNode()?.getText() ?? 'void';
     entries.push({
       name: method.getName(),
-      signature: `(${params}) => ${ret}`,
+      signature: normalizeNewlines(`(${params}) => ${ret}`),
       player: spec.player,
       group: groups.get(method.getName()) ?? own,
       kind: 'method',

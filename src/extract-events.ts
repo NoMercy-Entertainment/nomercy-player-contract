@@ -33,7 +33,11 @@ function readInterface(spec: MapSpec): EventEntry[] {
       ? nameNode.asKindOrThrow(SyntaxKind.StringLiteral).getLiteralValue()
       : prop.getName();
 
-    return { name, payload: prop.getTypeNode()?.getText() ?? 'unknown', map: spec.map };
+    // A CRLF checkout would otherwise bake \r\n into the payload text and the
+    // contract would stop matching one generated on Linux.
+    const payload = (prop.getTypeNode()?.getText() ?? 'unknown').replace(/\r\n/g, '\n');
+
+    return { name, payload, map: spec.map };
   });
 }
 
