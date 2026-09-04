@@ -1,8 +1,8 @@
 {
-  "version": "2.2.0",
+  "version": "2.2.1",
   "provenance": {
-    "version": "2.2.0",
-    "commit": "f8f337b",
+    "version": "2.2.1",
+    "commit": "a56df97",
     "commitsAheadOfTag": 0,
     "dirty": false
   },
